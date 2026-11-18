@@ -1,0 +1,19 @@
+{
+  "name": "GymLog — Daily Session Tracker",
+  "short_name": "GymLog",
+  "description": "Fast iPhone workout logger for instructor-led gym sessions with last-session recall, comfortable/challenge weights, and progression flags.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f1115",
+  "theme_color": "#0f1115",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

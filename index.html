@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="GymLog" />
+  <meta name="theme-color" content="#0f1115" />
+  <title>GymLog — Registro diario de entrenamiento</title>
+
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+  <link rel="apple-touch-icon" href="./icon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Top Header -->
+    <header class="app-header">
+      <div class="header-top">
+        <div class="date-nav">
+          <button type="button" class="icon-btn" id="btn-prev-day" aria-label="Día anterior">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <label class="date-picker-label" for="session-date-input">
+            <span class="header-kicker" id="header-kicker">Sesión de hoy</span>
+            <span class="header-title-row">
+              <span class="header-title" id="header-date-label">Lun, 16 Nov</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+            <input type="date" id="session-date-input" class="hidden-date-input" aria-label="Session date" />
+          </label>
+          <button type="button" class="icon-btn" id="btn-next-day" aria-label="Día siguiente">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" class="today-chip hidden" id="btn-jump-today" data-i18n="btnToday">Hoy</button>
+          <button type="button" class="lang-toggle" id="btn-lang-toggle" aria-label="Toggle language">
+            <span class="lang-opt active" data-lang="es">ES</span>
+            <span class="lang-opt" data-lang="en">EN</span>
+          </button>
+          <button type="button" class="unit-toggle" id="btn-unit-toggle" aria-label="Toggle weight unit">
+            <span class="unit-opt active" data-unit="kg">kg</span>
+            <span class="unit-opt" data-unit="lb">lb</span>
+          </button>
+          <button type="button" class="icon-btn" id="btn-open-settings" aria-label="Settings and backup">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Scroll Area -->
+    <main class="app-main">
+      <!-- VIEW 1: ACTIVE SESSION -->
+      <section id="view-session" class="view active" aria-label="Active session">
+        <div id="demo-banner" class="demo-banner hidden">
+          <div class="demo-banner-text">
+            <strong data-i18n="demoTitle">Historial de ejemplo activo</strong>
+            <span data-i18n="demoDesc">Incluye sesiones de prueba para ver "Última vez" e Historial.</span>
+          </div>
+          <button type="button" class="btn-chip-danger" id="btn-clear-demo" data-i18n="btnStartFresh">Empezar de cero</button>
+        </div>
+
+        <!-- Quick Add Search Bar -->
+        <button type="button" class="search-trigger-bar" id="btn-open-add-exercise">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span data-i18n="searchTriggerPlaceholder">Buscar o añadir ejercicio...</span>
+          <span class="search-trigger-plus" data-i18n="searchTriggerPlus">+ Añadir</span>
+        </button>
+
+        <!-- Session Stats + Optional Note -->
+        <div class="session-meta-bar" id="session-meta-bar">
+          <span class="session-stats" id="session-stats-text">0 ejercicios · 0 series</span>
+          <input type="text" id="session-notes-input" class="session-note-input" data-i18n-placeholder="sessionNotePlaceholder" placeholder="Añadir nota de sesión (opcional)..." autocomplete="off" />
+        </div>
+
+        <!-- Exercises List -->
+        <div id="session-exercises-list" class="exercises-list"></div>
+
+        <!-- Empty State -->
+        <div id="session-empty-state" class="empty-state hidden">
+          <div class="empty-icon">🏋️</div>
+          <h2 data-i18n="emptyTitle">Listo para entrenar hoy</h2>
+          <p data-i18n="emptyDesc">Cuando tu monitor te diga el primer ejercicio, búscalo y añádelo aquí para ver tus últimos pesos y anotar tus series.</p>
+          <button type="button" class="btn-primary btn-lg" id="btn-empty-add" data-i18n="emptyAddBtn">
+            + Añadir primer ejercicio
+          </button>
+        </div>
+      </section>
+
+      <!-- VIEW 2: EXERCISES CATALOG -->
+      <section id="view-exercises" class="view" aria-label="Exercise catalog">
+        <div class="view-toolbar">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" id="catalog-search-input" data-i18n-placeholder="catalogSearchPlaceholder" placeholder="Buscar en todos los ejercicios..." autocomplete="off" />
+          </div>
+          <button type="button" class="btn-primary btn-sm" id="btn-new-exercise" data-i18n="btnNewExerciseShort">+ Nuevo</button>
+        </div>
+
+        <div class="filter-pills" id="catalog-category-pills"></div>
+
+        <div id="catalog-exercises-list" class="catalog-list"></div>
+      </section>
+
+      <!-- VIEW 3: PAST SESSIONS -->
+      <section id="view-sessions" class="view" aria-label="Past sessions">
+        <div class="sessions-header-row">
+          <h2 class="section-heading" data-i18n="sessionsHeading">Registro de sesiones</h2>
+          <label class="btn-secondary btn-sm date-jump-btn" for="jump-session-date-input">
+            <span data-i18n="btnOpenDate">+ Abrir fecha</span>
+            <input type="date" id="jump-session-date-input" class="hidden-date-input" />
+          </label>
+        </div>
+        <div id="past-sessions-list" class="sessions-list"></div>
+      </section>
+    </main>
+
+    <!-- Floating Quick Add Button -->
+    <button type="button" class="fab-add hidden" id="fab-add-exercise" aria-label="Add exercise">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      <span data-i18n="fabAdd">Añadir ejercicio</span>
+    </button>
+
+    <!-- Bottom Tab Bar (iOS style) -->
+    <nav class="tab-bar" aria-label="Main navigation">
+      <button type="button" class="tab-item active" data-tab="session">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6.5 6.5h11"/><path d="M6.5 17.5h11"/>
+          <path d="M4 9v6"/><path d="M20 9v6"/>
+          <path d="M7 5v14"/><path d="M17 5v14"/>
+          <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+        </svg>
+        <span data-i18n="tabSession">Sesión</span>
+      </button>
+      <button type="button" class="tab-item" data-tab="exercises">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <span data-i18n="tabExercises">Ejercicios</span>
+      </button>
+      <button type="button" class="tab-item" data-tab="sessions">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        <span data-i18n="tabPastDays">Historial</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- MODAL 1: ADD EXERCISE SEARCH SHEET -->
+  <div id="modal-add-exercise" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-add-title">
+    <div class="bottom-sheet sheet-tall">
+      <div class="sheet-handle"></div>
+      <div class="sheet-header">
+        <h2 id="modal-add-title" data-i18n="modalAddTitle">Añadir ejercicio a la sesión</h2>
+        <button type="button" class="close-btn" data-close-modal="modal-add-exercise" aria-label="Close">✕</button>
+      </div>
+
+      <div class="sheet-search-wrap">
+        <div class="search-box search-box-lg">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="add-exercise-search" data-i18n-placeholder="addSearchPlaceholder" placeholder="Escribe en español o inglés (ej: tríceps cuerda)..." autocomplete="off" />
+          <button type="button" class="clear-input-btn hidden" id="btn-clear-add-search" aria-label="Clear search">✕</button>
+        </div>
+        <div class="filter-pills" id="add-exercise-pills"></div>
+      </div>
+
+      <div class="sheet-body" id="add-exercise-body">
+        <div id="quick-create-wrap" class="quick-create-wrap hidden">
+          <div class="quick-create-top">
+            <span class="quick-create-label" data-i18n="quickCreateLabel">¿No está en la lista? Guárdalo en tu base de datos y añádelo:</span>
+            <select id="quick-create-category" class="category-select" aria-label="Category for new exercise">
+              <option value="Custom">Personalizado</option>
+              <option value="Chest">Pecho</option>
+              <option value="Back">Espalda</option>
+              <option value="Shoulders">Hombros</option>
+              <option value="Biceps">Bíceps</option>
+              <option value="Triceps">Tríceps</option>
+              <option value="Legs">Piernas</option>
+              <option value="Glutes">Glúteos</option>
+              <option value="Calves">Gemelos</option>
+              <option value="Core">Abdomen</option>
+              <option value="Forearms">Antebrazos</option>
+            </select>
+          </div>
+          <input type="url" id="quick-create-video" class="quick-create-video-input" data-i18n-placeholder="newExVideoPlaceholder" placeholder="Enlace de MuscleWiki (opcional): https://musclewiki.com/es-es/exercise/..." autocomplete="off" spellcheck="false" />
+          <button type="button" class="btn-create-add" id="btn-quick-create-add">
+            <span data-i18n="quickCreateBtnPrefix">+ Crear y añadir</span> "<span id="quick-create-name"></span>"
+          </button>
+        </div>
+
+        <div id="add-exercise-results" class="search-results-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: EXERCISE HISTORY & GENERAL WEIGHTS SHEET -->
+  <div id="modal-exercise-history" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="history-exercise-title">
+    <div class="bottom-sheet sheet-tall">
+      <div class="sheet-handle"></div>
+      <div class="sheet-header">
+        <div class="history-header-title-wrap">
+          <div class="history-badges-row">
+            <span class="category-badge" id="history-exercise-category">Category</span>
+            <span class="equipment-badge hidden" id="history-exercise-equipment">Equipment</span>
+          </div>
+          <h2 id="history-exercise-title">Exercise Name</h2>
+          <p class="history-alt-name hidden" id="history-exercise-alt-name"></p>
+        </div>
+        <button type="button" class="close-btn" data-close-modal="modal-exercise-history" aria-label="Close">✕</button>
+      </div>
+
+      <div class="sheet-body">
+        <div class="history-video-links">
+          <a id="history-video-link" class="btn-video-primary" href="https://musclewiki.com/es-es/exercises" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">🎬</span>
+            <span data-i18n="watchVideoMuscleWiki">Ver vídeo del ejercicio</span>
+            <span class="external-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a id="history-muscle-link" class="btn-video-secondary" href="https://musclewiki.com/es-es/exercises" target="_blank" rel="noopener noreferrer">
+            <span id="history-muscle-link-label">Todos los vídeos</span>
+            <span class="external-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="history-profile-card">
+          <button type="button" class="increase-toggle-btn" id="history-increase-toggle">
+            <span class="check-box">✓</span>
+            <span class="increase-text" data-i18n="increaseToggleText">Subir peso la próxima vez</span>
+            <span class="increase-arrow">⬆️</span>
+          </button>
+
+          <div class="general-weights-grid">
+            <label class="weight-stat-field comfortable">
+              <span class="field-label" data-i18n="comfortableShort">Cómodo</span>
+              <div class="input-with-unit">
+                <input type="text" inputmode="decimal" id="history-comfortable-input" placeholder="—" />
+                <span class="unit-suffix" data-unit-label>kg</span>
+              </div>
+            </label>
+            <label class="weight-stat-field challenge">
+              <span class="field-label" data-i18n="challengeShort">Reto</span>
+              <div class="input-with-unit">
+                <input type="text" inputmode="decimal" id="history-challenge-input" placeholder="—" />
+                <span class="unit-suffix" data-unit-label>kg</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="history-section-header">
+          <h3 data-i18n="previousSessionsTitle">Sesiones anteriores</h3>
+          <span class="history-count" id="history-session-count">0 sesiones</span>
+        </div>
+
+        <div id="history-sessions-list" class="history-timeline"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: NEW EXERCISE MODAL -->
+  <div id="modal-new-exercise" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-new-ex-title">
+    <div class="bottom-sheet">
+      <div class="sheet-handle"></div>
+      <div class="sheet-header">
+        <h2 id="modal-new-ex-title" data-i18n="modalNewExTitle">Nuevo ejercicio</h2>
+        <button type="button" class="close-btn" data-close-modal="modal-new-exercise" aria-label="Close">✕</button>
+      </div>
+      <form id="form-new-exercise" class="sheet-body form-stack">
+        <label class="form-field">
+          <span class="field-label" data-i18n="newExNameLabel">Nombre del ejercicio</span>
+          <input type="text" id="new-ex-name" required data-i18n-placeholder="newExNamePlaceholder" placeholder="Ej: Sentadilla búlgara con mancuernas" autocomplete="off" />
+        </label>
+
+        <div class="general-weights-grid">
+          <label class="form-field">
+            <span class="field-label" data-i18n="newExCategoryLabel">Grupo muscular</span>
+            <select id="new-ex-category">
+              <option value="Chest">Pecho</option>
+              <option value="Back">Espalda</option>
+              <option value="Shoulders">Hombros</option>
+              <option value="Biceps">Bíceps</option>
+              <option value="Triceps">Tríceps</option>
+              <option value="Legs">Piernas</option>
+              <option value="Glutes">Glúteos</option>
+              <option value="Calves">Gemelos</option>
+              <option value="Core">Abdomen</option>
+              <option value="Forearms">Antebrazos</option>
+              <option value="Custom">Personalizado</option>
+            </select>
+          </label>
+
+          <label class="form-field">
+            <span class="field-label" data-i18n="newExEquipmentLabel">Equipamiento</span>
+            <select id="new-ex-equipment">
+              <option value="dumbbells">Mancuernas</option>
+              <option value="barbell">Barra</option>
+              <option value="cables">Polea</option>
+              <option value="machine">Máquina</option>
+              <option value="bodyweight">Peso corporal</option>
+              <option value="kettlebells">Pesa rusa</option>
+              <option value="band">Banda</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="form-field">
+          <span class="field-label" data-i18n="newExVideoLabel">Enlace de vídeo (opcional)</span>
+          <input type="url" id="new-ex-video" data-i18n-placeholder="newExVideoPlaceholder" placeholder="https://musclewiki.com/es-es/..." autocomplete="off" />
+        </label>
+
+        <div class="general-weights-grid">
+          <label class="weight-stat-field comfortable">
+            <span class="field-label" data-i18n="comfortableLabel">Peso cómodo</span>
+            <div class="input-with-unit">
+              <input type="text" inputmode="decimal" id="new-ex-comfortable" placeholder="—" />
+              <span class="unit-suffix" data-unit-label>kg</span>
+            </div>
+          </label>
+          <label class="weight-stat-field challenge">
+            <span class="field-label" data-i18n="challengeLabel">Peso reto</span>
+            <div class="input-with-unit">
+              <input type="text" inputmode="decimal" id="new-ex-challenge" placeholder="—" />
+              <span class="unit-suffix" data-unit-label>kg</span>
+            </div>
+          </label>
+        </div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="new-ex-increase" />
+          <span data-i18n="newExIncreaseLabel">Marcar "Subir peso la próxima vez" ⬆️</span>
+        </label>
+
+        <button type="submit" class="btn-primary btn-lg" data-i18n="btnSaveExercise">Guardar ejercicio</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 4: SETTINGS, DEMO DATA & BACKUP -->
+  <div id="modal-settings" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-settings-title">
+    <div class="bottom-sheet">
+      <div class="sheet-handle"></div>
+      <div class="sheet-header">
+        <h2 id="modal-settings-title" data-i18n="modalSettingsTitle">Ajustes y copia de seguridad</h2>
+        <button type="button" class="close-btn" data-close-modal="modal-settings" aria-label="Close">✕</button>
+      </div>
+      <div class="sheet-body settings-stack">
+        <div class="settings-group">
+          <h3 data-i18n="settingsLanguageTitle">Idioma / Language</h3>
+          <p class="settings-desc" data-i18n="settingsLanguageDesc">
+            Cambia el idioma de toda la aplicación, el catálogo de ejercicios y los enlaces de MuscleWiki.
+          </p>
+          <div class="settings-btn-row">
+            <button type="button" class="btn-secondary lang-choice-btn active" id="btn-settings-lang-es" data-set-lang="es">🇪🇸 Español</button>
+            <button type="button" class="btn-secondary lang-choice-btn" id="btn-settings-lang-en" data-set-lang="en">🇬🇧 English</button>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <h3 data-i18n="settingsIphoneTitle">Instalar en iPhone</h3>
+          <p class="settings-desc" data-i18n="settingsIphoneDesc">
+            Abre esta página en Safari en tu iPhone, pulsa el botón Compartir y luego "Añadir a pantalla de inicio". Funciona sin conexión en el gimnasio.
+          </p>
+        </div>
+
+        <div class="settings-group">
+          <h3 data-i18n="settingsBackupTitle">Copia de seguridad y restauración</h3>
+          <p class="settings-desc" data-i18n="settingsBackupDesc">Todo se guarda automáticamente en este dispositivo. Puedes exportar una copia en JSON cuando quieras.</p>
+          <div class="settings-btn-row">
+            <button type="button" class="btn-secondary" id="btn-export-json" data-i18n="btnExportJson">Exportar JSON</button>
+            <label class="btn-secondary file-btn">
+              <span data-i18n="btnImportJson">Importar JSON</span>
+              <input type="file" id="input-import-json" accept="application/json,.json" hidden />
+            </label>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <h3 data-i18n="settingsDemoTitle">Datos de ejemplo</h3>
+          <p class="settings-desc" data-i18n="settingsDemoDesc">Prueba la app con sesiones de ejemplo o borra las sesiones para empezar de cero.</p>
+          <div class="settings-btn-row">
+            <button type="button" class="btn-secondary" id="btn-load-demo" data-i18n="btnLoadDemo">Cargar historial de ejemplo</button>
+            <button type="button" class="btn-danger" id="btn-clear-sessions" data-i18n="btnClearSessions">Borrar sesiones</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Feedback -->
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <script src="./exercises-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
