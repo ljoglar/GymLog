@@ -243,7 +243,7 @@
     band: { es: 'Banda', en: 'Band' }
   };
 
-  // Comprehensive bilingual MuscleWiki exercise dataset
+  // Comprehensive bilingual MuscleWiki exercise dataset (295+ exercises)
   const MUSCLEWIKI_EXERCISES = [
     // ==================== CHEST / PECHO ====================
     {
@@ -297,6 +297,86 @@
       keywords: 'pecho superior inclinado mancuernas'
     },
     {
+      id: 'ex_decline_db_press',
+      nameEs: 'Press declinado con mancuernas',
+      nameEn: 'Decline Dumbbell Bench Press',
+      category: 'Chest',
+      equipment: 'dumbbells',
+      muscleSlug: 'chest',
+      mwSlug: 'decline-dumbbell-bench-press',
+      keywords: 'pecho inferior declinado mancuernas'
+    },
+    {
+      id: 'ex_neutral_db_bench_press',
+      nameEs: 'Press de banca agarre neutro con mancuernas',
+      nameEn: 'Neutral-Grip Dumbbell Bench Press',
+      category: 'Chest',
+      equipment: 'dumbbells',
+      muscleSlug: 'chest',
+      mwSlug: 'neutral-grip-dumbbell-bench-press',
+      keywords: 'press neutro palmas enfrentadas mancuernas pecho'
+    },
+    {
+      id: 'ex_single_arm_db_press',
+      nameEs: 'Press de pecho a una mano con mancuerna',
+      nameEn: 'Single-Arm Dumbbell Bench Press',
+      category: 'Chest',
+      equipment: 'dumbbells',
+      muscleSlug: 'chest',
+      mwSlug: 'single-arm-dumbbell-bench-press',
+      keywords: 'press unilateral una mano mancuerna pecho core'
+    },
+    {
+      id: 'ex_floor_press_barbell',
+      nameEs: 'Floor Press con barra (en el suelo)',
+      nameEn: 'Barbell Floor Press',
+      category: 'Chest',
+      equipment: 'barbell',
+      muscleSlug: 'chest',
+      mwSlug: 'barbell-floor-press',
+      keywords: 'floor press suelo barra pecho triceps'
+    },
+    {
+      id: 'ex_floor_press_db',
+      nameEs: 'Floor Press con mancuernas',
+      nameEn: 'Dumbbell Floor Press',
+      category: 'Chest',
+      equipment: 'dumbbells',
+      muscleSlug: 'chest',
+      mwSlug: 'dumbbell-floor-press',
+      keywords: 'floor press suelo mancuernas pecho'
+    },
+    {
+      id: 'ex_guillotine_press',
+      nameEs: 'Press guillotina con barra',
+      nameEn: 'Barbell Guillotine Bench Press',
+      category: 'Chest',
+      equipment: 'barbell',
+      muscleSlug: 'chest',
+      mwSlug: 'barbell-guillotine-press',
+      keywords: 'press guillotina cuello barra pecho superior'
+    },
+    {
+      id: 'ex_landmine_chest_press',
+      nameEs: 'Press de pecho en Landmine (barra T)',
+      nameEn: 'Landmine Chest Press',
+      category: 'Chest',
+      equipment: 'barbell',
+      muscleSlug: 'chest',
+      mwSlug: 'landmine-chest-press',
+      keywords: 'landmine barra esquina pecho superior press'
+    },
+    {
+      id: 'ex_svend_press',
+      nameEs: 'Press Svend con disco',
+      nameEn: 'Plate Svend Press',
+      category: 'Chest',
+      equipment: 'barbell',
+      muscleSlug: 'chest',
+      mwSlug: 'svend-press',
+      keywords: 'svend disco pecho interno isometrico'
+    },
+    {
       id: 'ex_db_flyes',
       nameEs: 'Aperturas con mancuernas en banco plano',
       nameEn: 'Dumbbell Flyes',
@@ -337,6 +417,36 @@
       keywords: 'cruce polea baja pecho superior'
     },
     {
+      id: 'ex_high_cable_fly',
+      nameEs: 'Cruce de poleas altas (pecho inferior)',
+      nameEn: 'High-to-Low Cable Fly',
+      category: 'Chest',
+      equipment: 'cables',
+      muscleSlug: 'chest',
+      mwSlug: 'high-cable-chest-fly',
+      keywords: 'cruce polea alta pecho inferior aperturas'
+    },
+    {
+      id: 'ex_seated_cable_chest_press',
+      nameEs: 'Press de pecho sentado en poleas',
+      nameEn: 'Seated Cable Chest Press',
+      category: 'Chest',
+      equipment: 'cables',
+      muscleSlug: 'chest',
+      mwSlug: 'seated-cable-chest-press',
+      keywords: 'press pecho poleas sentado cable'
+    },
+    {
+      id: 'ex_single_arm_cable_fly',
+      nameEs: 'Aperturas en polea a una mano',
+      nameEn: 'Single-Arm Cable Chest Fly',
+      category: 'Chest',
+      equipment: 'cables',
+      muscleSlug: 'chest',
+      mwSlug: 'single-arm-cable-chest-fly',
+      keywords: 'cruce polea unilateral una mano pecho'
+    },
+    {
       id: 'ex_chest_press_machine',
       nameEs: 'Press de pecho en máquina',
       nameEn: 'Chest Press Machine',
@@ -345,6 +455,46 @@
       muscleSlug: 'chest',
       mwSlug: 'machine-chest-press',
       keywords: 'pecho maquina sentado press'
+    },
+    {
+      id: 'ex_incline_machine_chest_press',
+      nameEs: 'Press inclinado de pecho en máquina / Hammer',
+      nameEn: 'Incline Machine Chest Press',
+      category: 'Chest',
+      equipment: 'machine',
+      muscleSlug: 'chest',
+      mwSlug: 'incline-machine-chest-press',
+      keywords: 'press inclinado maquina hammer pecho superior'
+    },
+    {
+      id: 'ex_iso_lateral_chest_press',
+      nameEs: 'Press convergente de pecho en discos (Iso-Lateral)',
+      nameEn: 'Iso-Lateral Chest Press Machine',
+      category: 'Chest',
+      equipment: 'machine',
+      muscleSlug: 'chest',
+      mwSlug: 'iso-lateral-chest-press',
+      keywords: 'hammer strength palanca discos pecho maquina'
+    },
+    {
+      id: 'ex_smith_bench_press',
+      nameEs: 'Press de banca en multipower (Smith)',
+      nameEn: 'Smith Machine Bench Press',
+      category: 'Chest',
+      equipment: 'machine',
+      muscleSlug: 'chest',
+      mwSlug: 'smith-machine-bench-press',
+      keywords: 'pecho multipower smith maquina press'
+    },
+    {
+      id: 'ex_incline_smith_press',
+      nameEs: 'Press inclinado en multipower (Smith)',
+      nameEn: 'Incline Smith Machine Bench Press',
+      category: 'Chest',
+      equipment: 'machine',
+      muscleSlug: 'chest',
+      mwSlug: 'incline-smith-machine-bench-press',
+      keywords: 'pecho inclinado multipower smith maquina'
     },
     {
       id: 'ex_pec_deck',
@@ -368,13 +518,43 @@
     },
     {
       id: 'ex_incline_pushups',
-      nameEs: 'Flexiones inclinadas',
+      nameEs: 'Flexiones inclinadas (manos elevadas)',
       nameEn: 'Incline Push-ups',
       category: 'Chest',
       equipment: 'bodyweight',
       muscleSlug: 'chest',
       mwSlug: 'incline-push-up',
-      keywords: 'flexiones banco apoyado pecho'
+      keywords: 'flexiones banco apoyado pecho facil'
+    },
+    {
+      id: 'ex_decline_pushups',
+      nameEs: 'Flexiones declinadas (pies elevados)',
+      nameEn: 'Decline Push-ups',
+      category: 'Chest',
+      equipment: 'bodyweight',
+      muscleSlug: 'chest',
+      mwSlug: 'decline-push-up',
+      keywords: 'flexiones pies banco elevado pecho superior'
+    },
+    {
+      id: 'ex_wide_pushups',
+      nameEs: 'Flexiones con agarre ancho',
+      nameEn: 'Wide-Grip Push-ups',
+      category: 'Chest',
+      equipment: 'bodyweight',
+      muscleSlug: 'chest',
+      mwSlug: 'wide-push-up',
+      keywords: 'flexiones anchas abiertas pecho'
+    },
+    {
+      id: 'ex_archer_pushups',
+      nameEs: 'Flexiones arqueras (Archer Push-ups)',
+      nameEn: 'Archer Push-ups',
+      category: 'Chest',
+      equipment: 'bodyweight',
+      muscleSlug: 'chest',
+      mwSlug: 'archer-push-ups',
+      keywords: 'flexiones arqueras calistenia pecho unilateral'
     },
     {
       id: 'ex_chest_dips',
@@ -384,7 +564,7 @@
       equipment: 'bodyweight',
       muscleSlug: 'chest',
       mwSlug: 'chest-dip',
-      keywords: 'fondos paralelas pecho inferior'
+      keywords: 'fondos paralelas pecho inferior inclinado'
     },
 
     // ==================== BACK / ESPALDA ====================
@@ -399,14 +579,34 @@
       keywords: 'jalon pecho dorsal polea alta espalda'
     },
     {
+      id: 'ex_wide_grip_pulldown',
+      nameEs: 'Jalón al pecho agarre ancho',
+      nameEn: 'Wide-Grip Lat Pulldown',
+      category: 'Back',
+      equipment: 'cables',
+      muscleSlug: 'lats',
+      mwSlug: 'wide-grip-lat-pulldown',
+      keywords: 'jalon abierto ancho dorsal polea espalda'
+    },
+    {
       id: 'ex_close_grip_pulldown',
-      nameEs: 'Jalón al pecho agarre estrecho',
+      nameEs: 'Jalón al pecho agarre estrecho (triángulo)',
       nameEn: 'Close-Grip Lat Pulldown',
       category: 'Back',
       equipment: 'cables',
       muscleSlug: 'lats',
       mwSlug: 'close-grip-cable-pulldown',
       keywords: 'jalon cerrado triangulo polea dorsal'
+    },
+    {
+      id: 'ex_neutral_grip_pulldown',
+      nameEs: 'Jalón al pecho agarre neutro',
+      nameEn: 'Neutral-Grip Lat Pulldown',
+      category: 'Back',
+      equipment: 'cables',
+      muscleSlug: 'lats',
+      mwSlug: 'neutral-grip-lat-pulldown',
+      keywords: 'jalon neutro mag grip polea dorsal espalda'
     },
     {
       id: 'ex_reverse_grip_pulldown',
@@ -417,6 +617,16 @@
       muscleSlug: 'lats',
       mwSlug: 'reverse-grip-pulldown',
       keywords: 'jalon supino invertido dorsal espalda'
+    },
+    {
+      id: 'ex_single_arm_pulldown',
+      nameEs: 'Jalón unilateral en polea a una mano',
+      nameEn: 'Single-Arm Cable Lat Pulldown',
+      category: 'Back',
+      equipment: 'cables',
+      muscleSlug: 'lats',
+      mwSlug: 'single-arm-lat-pulldown',
+      keywords: 'jalon una mano polea unilateral dorsal iliaco'
     },
     {
       id: 'ex_pullups',
@@ -439,6 +649,16 @@
       keywords: 'dominadas agarre supino espalda biceps'
     },
     {
+      id: 'ex_neutral_pullups',
+      nameEs: 'Dominadas agarre neutro',
+      nameEn: 'Neutral-Grip Pull-ups',
+      category: 'Back',
+      equipment: 'bodyweight',
+      muscleSlug: 'lats',
+      mwSlug: 'neutral-grip-pull-ups',
+      keywords: 'dominadas neutras paralelas espalda'
+    },
+    {
       id: 'ex_assisted_pullup',
       nameEs: 'Dominadas asistidas en máquina',
       nameEn: 'Assisted Pull-up Machine',
@@ -449,6 +669,26 @@
       keywords: 'dominadas asistidas maquina espalda'
     },
     {
+      id: 'ex_band_assisted_pullup',
+      nameEs: 'Dominadas asistidas con goma',
+      nameEn: 'Band-Assisted Pull-ups',
+      category: 'Back',
+      equipment: 'band',
+      muscleSlug: 'lats',
+      mwSlug: 'band-assisted-pull-ups',
+      keywords: 'dominadas goma banda elastica espalda'
+    },
+    {
+      id: 'ex_muscle_up',
+      nameEs: 'Muscle-up en barra',
+      nameEn: 'Bar Muscle-up',
+      category: 'Back',
+      equipment: 'bodyweight',
+      muscleSlug: 'lats',
+      mwSlug: 'muscle-up',
+      keywords: 'muscle up calistenia barra dominada'
+    },
+    {
       id: 'ex_seated_cable_row',
       nameEs: 'Remo sentado en polea baja (Gironda)',
       nameEn: 'Seated Cable Row',
@@ -457,6 +697,16 @@
       muscleSlug: 'lats',
       mwSlug: 'cable-seated-row',
       keywords: 'remo gironda polea baja espalda sentado'
+    },
+    {
+      id: 'ex_wide_seated_cable_row',
+      nameEs: 'Remo sentado en polea agarre ancho',
+      nameEn: 'Wide-Grip Seated Cable Row',
+      category: 'Back',
+      equipment: 'cables',
+      muscleSlug: 'traps-middle',
+      mwSlug: 'wide-grip-seated-cable-row',
+      keywords: 'remo polea ancho espalda alta romboides trapecio'
     },
     {
       id: 'ex_single_arm_cable_row',
@@ -479,6 +729,16 @@
       keywords: 'pullover polea alta dorsal espalda'
     },
     {
+      id: 'ex_rope_straight_arm_pulldown',
+      nameEs: 'Pullover en polea con cuerda',
+      nameEn: 'Rope Straight-Arm Pulldown',
+      category: 'Back',
+      equipment: 'cables',
+      muscleSlug: 'lats',
+      mwSlug: 'rope-straight-arm-pulldown',
+      keywords: 'pullover cuerda polea dorsal'
+    },
+    {
       id: 'ex_barbell_row',
       nameEs: 'Remo con barra',
       nameEn: 'Barbell Row',
@@ -487,6 +747,16 @@
       muscleSlug: 'lats',
       mwSlug: 'barbell-bent-over-row',
       keywords: 'remo barra inclinado espalda dorsal'
+    },
+    {
+      id: 'ex_yates_row',
+      nameEs: 'Remo Yates con barra (agarre supino)',
+      nameEn: 'Yates Row (Underhand Barbell Row)',
+      category: 'Back',
+      equipment: 'barbell',
+      muscleSlug: 'lats',
+      mwSlug: 'underhand-barbell-row',
+      keywords: 'remo yates supino invertido barra espalda'
     },
     {
       id: 'ex_pendlay_row',
@@ -499,6 +769,16 @@
       keywords: 'remo pendlay suelo barra espalda'
     },
     {
+      id: 'ex_meadows_row',
+      nameEs: 'Remo Meadows en Landmine (a una mano)',
+      nameEn: 'Meadows Row (Landmine)',
+      category: 'Back',
+      equipment: 'barbell',
+      muscleSlug: 'lats',
+      mwSlug: 'meadows-row',
+      keywords: 'remo meadows landmine esquina barra unilateral dorsal'
+    },
+    {
       id: 'ex_db_row',
       nameEs: 'Remo con mancuerna a una mano',
       nameEn: 'One-Arm Dumbbell Row',
@@ -509,6 +789,16 @@
       keywords: 'remo mancuerna serrucho unilateral espalda'
     },
     {
+      id: 'ex_bent_over_db_row',
+      nameEs: 'Remo inclinado con dos mancuernas',
+      nameEn: 'Bent-Over Two-Arm Dumbbell Row',
+      category: 'Back',
+      equipment: 'dumbbells',
+      muscleSlug: 'lats',
+      mwSlug: 'bent-over-dumbbell-row',
+      keywords: 'remo dos mancuernas de pie inclinado espalda'
+    },
+    {
       id: 'ex_chest_supported_db_row',
       nameEs: 'Remo con mancuernas en banco inclinado',
       nameEn: 'Chest-Supported Dumbbell Row',
@@ -517,6 +807,26 @@
       muscleSlug: 'traps-middle',
       mwSlug: 'incline-dumbbell-row',
       keywords: 'remo pecho apoyado mancuernas espalda media'
+    },
+    {
+      id: 'ex_seal_row',
+      nameEs: 'Remo Seal (tumbado boca abajo en banco)',
+      nameEn: 'Seal Row',
+      category: 'Back',
+      equipment: 'barbell',
+      muscleSlug: 'traps-middle',
+      mwSlug: 'seal-row',
+      keywords: 'seal row remo foca banco alto barra mancuernas'
+    },
+    {
+      id: 'ex_db_pullover',
+      nameEs: 'Pullover con mancuerna',
+      nameEn: 'Dumbbell Pullover',
+      category: 'Back',
+      equipment: 'dumbbells',
+      muscleSlug: 'lats',
+      mwSlug: 'dumbbell-pullover',
+      keywords: 'pullover mancuerna dorsal pecho caja toracica'
     },
     {
       id: 'ex_tbar_row',
@@ -539,6 +849,56 @@
       keywords: 'remo maquina espalda pecho apoyado'
     },
     {
+      id: 'ex_iso_lateral_row',
+      nameEs: 'Remo convergente en máquina de discos (Hammer)',
+      nameEn: 'Iso-Lateral Machine Row',
+      category: 'Back',
+      equipment: 'machine',
+      muscleSlug: 'lats',
+      mwSlug: 'iso-lateral-row',
+      keywords: 'remo hammer palanca discos dorsal maquina'
+    },
+    {
+      id: 'ex_high_row_machine',
+      nameEs: 'Remo alto en máquina (High Row)',
+      nameEn: 'High Row Machine',
+      category: 'Back',
+      equipment: 'machine',
+      muscleSlug: 'lats',
+      mwSlug: 'machine-high-row',
+      keywords: 'remo alto high row maquina dorsal espalda alta'
+    },
+    {
+      id: 'ex_smith_row',
+      nameEs: 'Remo con barra en multipower (Smith)',
+      nameEn: 'Smith Machine Bent-Over Row',
+      category: 'Back',
+      equipment: 'machine',
+      muscleSlug: 'lats',
+      mwSlug: 'smith-machine-row',
+      keywords: 'remo multipower smith guiado espalda'
+    },
+    {
+      id: 'ex_inverted_row',
+      nameEs: 'Remo invertido en barra / TRX',
+      nameEn: 'Inverted Row',
+      category: 'Back',
+      equipment: 'bodyweight',
+      muscleSlug: 'lats',
+      mwSlug: 'inverted-row',
+      keywords: 'remo invertido australiano barra peso corporal trx espalda'
+    },
+    {
+      id: 'ex_gorilla_row',
+      nameEs: 'Remo gorila con pesas rusas (Kettlebells)',
+      nameEn: 'Kettlebell Gorilla Row',
+      category: 'Back',
+      equipment: 'kettlebells',
+      muscleSlug: 'lats',
+      mwSlug: 'kettlebell-gorilla-row',
+      keywords: 'remo gorila kettlebell pesa rusa espalda'
+    },
+    {
       id: 'ex_face_pulls',
       nameEs: 'Face Pull en polea (tirón a la cara)',
       nameEn: 'Cable Face Pulls',
@@ -559,6 +919,16 @@
       keywords: 'peso muerto barra espalda baja lumbar'
     },
     {
+      id: 'ex_rack_pull',
+      nameEs: 'Rack Pull con barra (Peso muerto parcial)',
+      nameEn: 'Barbell Rack Pull',
+      category: 'Back',
+      equipment: 'barbell',
+      muscleSlug: 'traps',
+      mwSlug: 'barbell-rack-pull',
+      keywords: 'rack pull jaula espalda trapecio lumbar'
+    },
+    {
       id: 'ex_back_extension',
       nameEs: 'Hiperextensiones lumbares en banco',
       nameEn: 'Back Extension (Hyperextension)',
@@ -567,6 +937,16 @@
       muscleSlug: 'lowerback',
       mwSlug: 'back-extension',
       keywords: 'hiperextensiones lumbares espalda baja'
+    },
+    {
+      id: 'ex_superman',
+      nameEs: 'Extensiones lumbares en suelo (Superman)',
+      nameEn: 'Superman Back Extension',
+      category: 'Back',
+      equipment: 'bodyweight',
+      muscleSlug: 'lowerback',
+      mwSlug: 'superman',
+      keywords: 'superman lumbar suelo espalda baja peso corporal'
     },
     {
       id: 'ex_barbell_shrugs',
@@ -587,6 +967,26 @@
       muscleSlug: 'traps',
       mwSlug: 'dumbbell-shrug',
       keywords: 'encogimientos trapecio mancuernas'
+    },
+    {
+      id: 'ex_smith_shrugs',
+      nameEs: 'Encogimientos de trapecio en multipower (Smith)',
+      nameEn: 'Smith Machine Shrugs',
+      category: 'Back',
+      equipment: 'machine',
+      muscleSlug: 'traps',
+      mwSlug: 'smith-machine-shrug',
+      keywords: 'encogimientos trapecio multipower smith'
+    },
+    {
+      id: 'ex_cable_shrugs',
+      nameEs: 'Encogimientos de trapecio en polea',
+      nameEn: 'Cable Shrugs',
+      category: 'Back',
+      equipment: 'cables',
+      muscleSlug: 'traps',
+      mwSlug: 'cable-shrug',
+      keywords: 'encogimientos trapecio polea baja'
     },
 
     // ==================== SHOULDERS / HOMBROS ====================
@@ -611,6 +1011,16 @@
       keywords: 'press militar sentado barra hombros'
     },
     {
+      id: 'ex_push_press',
+      nameEs: 'Push Press con barra (con impulso)',
+      nameEn: 'Barbell Push Press',
+      category: 'Shoulders',
+      equipment: 'barbell',
+      muscleSlug: 'shoulders',
+      mwSlug: 'barbell-push-press',
+      keywords: 'push press barra potencia hombros empuje'
+    },
+    {
       id: 'ex_db_shoulder_press',
       nameEs: 'Press de hombros con mancuernas',
       nameEn: 'Dumbbell Shoulder Press',
@@ -619,6 +1029,26 @@
       muscleSlug: 'shoulders',
       mwSlug: 'dumbbell-shoulder-press',
       keywords: 'press hombros mancuernas sentado deltoides'
+    },
+    {
+      id: 'ex_standing_db_press',
+      nameEs: 'Press militar con mancuernas de pie',
+      nameEn: 'Standing Dumbbell Overhead Press',
+      category: 'Shoulders',
+      equipment: 'dumbbells',
+      muscleSlug: 'shoulders',
+      mwSlug: 'standing-dumbbell-overhead-press',
+      keywords: 'press militar pie mancuernas hombros'
+    },
+    {
+      id: 'ex_single_arm_db_shoulder_press',
+      nameEs: 'Press de hombro a una mano con mancuerna',
+      nameEn: 'Single-Arm Dumbbell Shoulder Press',
+      category: 'Shoulders',
+      equipment: 'dumbbells',
+      muscleSlug: 'shoulders',
+      mwSlug: 'single-arm-dumbbell-shoulder-press',
+      keywords: 'press hombro unilateral una mano mancuerna'
     },
     {
       id: 'ex_arnold_press',
@@ -641,6 +1071,56 @@
       keywords: 'press hombros maquina deltoides'
     },
     {
+      id: 'ex_smith_shoulder_press',
+      nameEs: 'Press militar en multipower (Smith)',
+      nameEn: 'Smith Machine Shoulder Press',
+      category: 'Shoulders',
+      equipment: 'machine',
+      muscleSlug: 'shoulders',
+      mwSlug: 'smith-machine-shoulder-press',
+      keywords: 'press hombros multipower smith maquina'
+    },
+    {
+      id: 'ex_landmine_shoulder_press',
+      nameEs: 'Press de hombro en Landmine (a una mano)',
+      nameEn: 'Single-Arm Landmine Shoulder Press',
+      category: 'Shoulders',
+      equipment: 'barbell',
+      muscleSlug: 'shoulders',
+      mwSlug: 'landmine-shoulder-press',
+      keywords: 'landmine press hombro unilateral barra'
+    },
+    {
+      id: 'ex_kb_overhead_press',
+      nameEs: 'Press militar con pesa rusa (Kettlebell)',
+      nameEn: 'Kettlebell Overhead Press',
+      category: 'Shoulders',
+      equipment: 'kettlebells',
+      muscleSlug: 'shoulders',
+      mwSlug: 'kettlebell-overhead-press',
+      keywords: 'press hombro pesa rusa kettlebell'
+    },
+    {
+      id: 'ex_pike_pushups',
+      nameEs: 'Flexiones en pica (Pike Push-ups)',
+      nameEn: 'Pike Push-ups',
+      category: 'Shoulders',
+      equipment: 'bodyweight',
+      muscleSlug: 'shoulders',
+      mwSlug: 'pike-push-up',
+      keywords: 'flexiones pica pike hombros calistenia peso corporal'
+    },
+    {
+      id: 'ex_handstand_pushups',
+      nameEs: 'Flexiones haciendo el pino (en pared)',
+      nameEn: 'Handstand Push-ups',
+      category: 'Shoulders',
+      equipment: 'bodyweight',
+      muscleSlug: 'shoulders',
+      mwSlug: 'handstand-push-ups',
+      keywords: 'flexiones pino pared hombros calistenia'
+    },
+    {
       id: 'ex_lateral_raises',
       nameEs: 'Elevaciones laterales con mancuernas',
       nameEn: 'Dumbbell Lateral Raises',
@@ -651,6 +1131,26 @@
       keywords: 'elevaciones laterales vuelos hombros deltoides medio'
     },
     {
+      id: 'ex_seated_lateral_raises',
+      nameEs: 'Elevaciones laterales sentado con mancuernas',
+      nameEn: 'Seated Dumbbell Lateral Raises',
+      category: 'Shoulders',
+      equipment: 'dumbbells',
+      muscleSlug: 'shoulders',
+      mwSlug: 'seated-dumbbell-lateral-raise',
+      keywords: 'elevaciones laterales sentado banco mancuernas hombros'
+    },
+    {
+      id: 'ex_leaning_lateral_raise',
+      nameEs: 'Elevación lateral inclinado a una mano',
+      nameEn: 'Leaning Single-Arm Lateral Raise',
+      category: 'Shoulders',
+      equipment: 'dumbbells',
+      muscleSlug: 'shoulders',
+      mwSlug: 'leaning-dumbbell-lateral-raise',
+      keywords: 'elevacion lateral inclinado agarrado poste una mano'
+    },
+    {
       id: 'ex_cable_lateral_raise',
       nameEs: 'Elevaciones laterales en polea',
       nameEn: 'Cable Lateral Raise',
@@ -659,6 +1159,16 @@
       muscleSlug: 'shoulders',
       mwSlug: 'cable-lateral-raise',
       keywords: 'elevaciones laterales polea baja una mano hombros'
+    },
+    {
+      id: 'ex_dual_cable_lateral_raise',
+      nameEs: 'Elevaciones laterales cruzadas en doble polea',
+      nameEn: 'Dual-Cable Cross-Body Lateral Raise',
+      category: 'Shoulders',
+      equipment: 'cables',
+      muscleSlug: 'shoulders',
+      mwSlug: 'dual-cable-lateral-raise',
+      keywords: 'elevaciones laterales doble polea cruzado hombros'
     },
     {
       id: 'ex_machine_lateral_raise',
@@ -681,6 +1191,16 @@
       keywords: 'elevaciones frontales mancuernas deltoides anterior'
     },
     {
+      id: 'ex_barbell_front_raise',
+      nameEs: 'Elevaciones frontales con barra',
+      nameEn: 'Barbell Front Raise',
+      category: 'Shoulders',
+      equipment: 'barbell',
+      muscleSlug: 'shoulders',
+      mwSlug: 'barbell-front-raise',
+      keywords: 'elevaciones frontales barra deltoides anterior'
+    },
+    {
       id: 'ex_cable_front_raise',
       nameEs: 'Elevaciones frontales en polea',
       nameEn: 'Cable Front Raise',
@@ -691,6 +1211,16 @@
       keywords: 'elevaciones frontales polea hombros'
     },
     {
+      id: 'ex_plate_front_raise',
+      nameEs: 'Elevación frontal con disco',
+      nameEn: 'Plate Front Raise',
+      category: 'Shoulders',
+      equipment: 'barbell',
+      muscleSlug: 'shoulders',
+      mwSlug: 'plate-front-raise',
+      keywords: 'elevacion frontal disco volante hombros'
+    },
+    {
       id: 'ex_rear_delt_fly',
       nameEs: 'Pájaros con mancuernas (deltoides posterior)',
       nameEn: 'Dumbbell Rear Delt Flyes',
@@ -699,6 +1229,16 @@
       muscleSlug: 'shoulders',
       mwSlug: 'dumbbell-rear-delt-fly',
       keywords: 'pajaros posteriores deltoides posterior mancuernas hombro'
+    },
+    {
+      id: 'ex_incline_rear_delt_fly',
+      nameEs: 'Pájaros con mancuernas pecho apoyado en banco',
+      nameEn: 'Chest-Supported Incline Rear Delt Fly',
+      category: 'Shoulders',
+      equipment: 'dumbbells',
+      muscleSlug: 'shoulders',
+      mwSlug: 'incline-dumbbell-rear-delt-fly',
+      keywords: 'pajaros banco inclinado pecho apoyado posterior'
     },
     {
       id: 'ex_reverse_pec_deck',
@@ -731,14 +1271,44 @@
       keywords: 'remo al menton cuello barra hombros trapecio'
     },
     {
-      id: 'ex_plate_front_raise',
-      nameEs: 'Elevación frontal con disco',
-      nameEn: 'Plate Front Raise',
+      id: 'ex_cable_upright_row',
+      nameEs: 'Remo al mentón en polea',
+      nameEn: 'Cable Upright Row',
       category: 'Shoulders',
-      equipment: 'barbell',
+      equipment: 'cables',
       muscleSlug: 'shoulders',
-      mwSlug: 'plate-front-raise',
-      keywords: 'elevacion frontal disco volante hombros'
+      mwSlug: 'cable-upright-row',
+      keywords: 'remo al menton polea hombros deltoides lateral'
+    },
+    {
+      id: 'ex_db_upright_row',
+      nameEs: 'Remo al mentón con mancuernas',
+      nameEn: 'Dumbbell Upright Row',
+      category: 'Shoulders',
+      equipment: 'dumbbells',
+      muscleSlug: 'shoulders',
+      mwSlug: 'dumbbell-upright-row',
+      keywords: 'remo al menton mancuernas hombros'
+    },
+    {
+      id: 'ex_band_pull_apart',
+      nameEs: 'Band Pull-Apart (abducción horizontal con goma)',
+      nameEn: 'Band Pull-Apart',
+      category: 'Shoulders',
+      equipment: 'band',
+      muscleSlug: 'shoulders',
+      mwSlug: 'band-pull-apart',
+      keywords: 'banda goma elastica posterior hombro calentamiento'
+    },
+    {
+      id: 'ex_cable_external_rotation',
+      nameEs: 'Rotación externa de hombro en polea (manguito)',
+      nameEn: 'Cable Shoulder External Rotation',
+      category: 'Shoulders',
+      equipment: 'cables',
+      muscleSlug: 'shoulders',
+      mwSlug: 'cable-external-rotation',
+      keywords: 'rotacion externa manguito rotador hombro polea'
     },
 
     // ==================== BICEPS / BÍCEPS ====================
@@ -763,6 +1333,16 @@
       keywords: 'curl biceps barra z ez brazo'
     },
     {
+      id: 'ex_drag_curl',
+      nameEs: 'Curl Drag con barra (arrastre)',
+      nameEn: 'Barbell Drag Curl',
+      category: 'Biceps',
+      equipment: 'barbell',
+      muscleSlug: 'biceps',
+      mwSlug: 'barbell-drag-curl',
+      keywords: 'drag curl arrastre codos atras barra biceps'
+    },
+    {
       id: 'ex_db_bicep_curl',
       nameEs: 'Curl de bíceps con mancuernas',
       nameEn: 'Dumbbell Bicep Curl',
@@ -773,6 +1353,16 @@
       keywords: 'curl biceps mancuernas alterno supinacion'
     },
     {
+      id: 'ex_alt_db_curl',
+      nameEs: 'Curl alterno con mancuernas',
+      nameEn: 'Alternating Dumbbell Curl',
+      category: 'Biceps',
+      equipment: 'dumbbells',
+      muscleSlug: 'biceps',
+      mwSlug: 'alternating-dumbbell-curl',
+      keywords: 'curl alterno mancuernas biceps brazo'
+    },
+    {
       id: 'ex_hammer_curl',
       nameEs: 'Curl martillo con mancuernas',
       nameEn: 'Dumbbell Hammer Curl',
@@ -781,6 +1371,16 @@
       muscleSlug: 'biceps',
       mwSlug: 'dumbbell-hammer-curl',
       keywords: 'curl martillo mancuernas braquial antebrazo'
+    },
+    {
+      id: 'ex_cross_body_hammer',
+      nameEs: 'Curl martillo cruzado al pecho',
+      nameEn: 'Cross-Body Hammer Curl',
+      category: 'Biceps',
+      equipment: 'dumbbells',
+      muscleSlug: 'biceps',
+      mwSlug: 'cross-body-hammer-curl',
+      keywords: 'curl martillo cruzado braquial biceps'
     },
     {
       id: 'ex_incline_db_curl',
@@ -803,6 +1403,46 @@
       keywords: 'curl concentrado sentado mancuerna biceps'
     },
     {
+      id: 'ex_zottman_curl',
+      nameEs: 'Curl Zottman con mancuernas',
+      nameEn: 'Zottman Curl',
+      category: 'Biceps',
+      equipment: 'dumbbells',
+      muscleSlug: 'biceps',
+      mwSlug: 'zottman-curl',
+      keywords: 'curl zottman giro supino prono mancuernas biceps antebrazo'
+    },
+    {
+      id: 'ex_waiter_curl',
+      nameEs: 'Curl de camarero con mancuerna (Waiter Curl)',
+      nameEn: 'Dumbbell Waiter Curl',
+      category: 'Biceps',
+      equipment: 'dumbbells',
+      muscleSlug: 'biceps',
+      mwSlug: 'dumbbell-waiter-curl',
+      keywords: 'waiter curl camarero dos manos disco mancuerna biceps'
+    },
+    {
+      id: 'ex_spider_curl',
+      nameEs: 'Curl araña (Spider Curl)',
+      nameEn: 'Spider Curl',
+      category: 'Biceps',
+      equipment: 'dumbbells',
+      muscleSlug: 'biceps',
+      mwSlug: 'spider-curl',
+      keywords: 'curl arana spider banco inclinado mancuernas'
+    },
+    {
+      id: 'ex_ez_spider_curl',
+      nameEs: 'Curl araña con barra Z',
+      nameEn: 'EZ-Bar Spider Curl',
+      category: 'Biceps',
+      equipment: 'barbell',
+      muscleSlug: 'biceps',
+      mwSlug: 'ez-bar-spider-curl',
+      keywords: 'curl arana spider barra z biceps'
+    },
+    {
       id: 'ex_preacher_curl',
       nameEs: 'Curl en banco Scott (Predicador)',
       nameEn: 'Preacher Curl',
@@ -811,6 +1451,16 @@
       muscleSlug: 'biceps',
       mwSlug: 'ez-bar-preacher-curl',
       keywords: 'curl scott predicador barra z biceps'
+    },
+    {
+      id: 'ex_db_preacher_curl',
+      nameEs: 'Curl en banco Scott a una mano con mancuerna',
+      nameEn: 'Single-Arm Dumbbell Preacher Curl',
+      category: 'Biceps',
+      equipment: 'dumbbells',
+      muscleSlug: 'biceps',
+      mwSlug: 'dumbbell-preacher-curl',
+      keywords: 'curl scott predicador unilateral una mano mancuerna'
     },
     {
       id: 'ex_machine_preacher_curl',
@@ -833,6 +1483,16 @@
       keywords: 'curl polea baja barra recta biceps'
     },
     {
+      id: 'ex_cable_single_curl',
+      nameEs: 'Curl de bíceps en polea a una mano',
+      nameEn: 'Single-Arm Cable Bicep Curl',
+      category: 'Biceps',
+      equipment: 'cables',
+      muscleSlug: 'biceps',
+      mwSlug: 'single-arm-cable-curl',
+      keywords: 'curl biceps polea unilateral una mano'
+    },
+    {
       id: 'ex_cable_hammer_curl',
       nameEs: 'Curl martillo en polea con cuerda',
       nameEn: 'Cable Rope Hammer Curl',
@@ -853,16 +1513,6 @@
       keywords: 'curl polea alta doble biceps'
     },
     {
-      id: 'ex_spider_curl',
-      nameEs: 'Curl araña (Spider Curl)',
-      nameEn: 'Spider Curl',
-      category: 'Biceps',
-      equipment: 'dumbbells',
-      muscleSlug: 'biceps',
-      mwSlug: 'spider-curl',
-      keywords: 'curl arana spider banco inclinado mancuernas'
-    },
-    {
       id: 'ex_bayes_curl',
       nameEs: 'Curl bayesiano en polea (de espaldas)',
       nameEn: 'Bayesian Cable Curl',
@@ -871,6 +1521,26 @@
       muscleSlug: 'biceps',
       mwSlug: 'bayesian-cable-curl',
       keywords: 'curl bayesiano polea de espaldas estiramiento'
+    },
+    {
+      id: 'ex_lying_cable_curl',
+      nameEs: 'Curl de bíceps tumbado en polea baja',
+      nameEn: 'Lying Cable Bicep Curl',
+      category: 'Biceps',
+      equipment: 'cables',
+      muscleSlug: 'biceps',
+      mwSlug: 'lying-cable-curl',
+      keywords: 'curl tumbado suelo polea baja biceps'
+    },
+    {
+      id: 'ex_band_bicep_curl',
+      nameEs: 'Curl de bíceps con banda elástica',
+      nameEn: 'Resistance Band Bicep Curl',
+      category: 'Biceps',
+      equipment: 'band',
+      muscleSlug: 'biceps',
+      mwSlug: 'band-bicep-curl',
+      keywords: 'curl banda elastica goma biceps'
     },
 
     // ==================== TRICEPS / TRÍCEPS ====================
@@ -892,7 +1562,27 @@
       equipment: 'cables',
       muscleSlug: 'triceps',
       mwSlug: 'cable-pushdown',
-      keywords: 'triceps polea barra recta v extension'
+      keywords: 'triceps polea barra recta extension'
+    },
+    {
+      id: 'ex_tricep_vbar_pushdown',
+      nameEs: 'Extensión de tríceps en polea con barra en V',
+      nameEn: 'Cable V-Bar Tricep Pushdown',
+      category: 'Triceps',
+      equipment: 'cables',
+      muscleSlug: 'triceps',
+      mwSlug: 'cable-v-bar-pushdown',
+      keywords: 'triceps polea barra v extension'
+    },
+    {
+      id: 'ex_tricep_reverse_pushdown',
+      nameEs: 'Extensión de tríceps en polea agarre supino',
+      nameEn: 'Reverse-Grip Cable Tricep Pushdown',
+      category: 'Triceps',
+      equipment: 'cables',
+      muscleSlug: 'triceps',
+      mwSlug: 'reverse-grip-cable-pushdown',
+      keywords: 'triceps polea invertido supino extension'
     },
     {
       id: 'ex_tricep_single_pushdown',
@@ -905,6 +1595,16 @@
       keywords: 'triceps polea unilateral una mano'
     },
     {
+      id: 'ex_cross_body_cable_tricep',
+      nameEs: 'Extensión cruzada de tríceps en doble polea',
+      nameEn: 'Cross-Body Cable Tricep Extension',
+      category: 'Triceps',
+      equipment: 'cables',
+      muscleSlug: 'triceps',
+      mwSlug: 'cross-body-cable-tricep-extension',
+      keywords: 'triceps doble polea cruzado extension katana'
+    },
+    {
       id: 'ex_overhead_tricep_ext',
       nameEs: 'Extensión de tríceps tras nuca en polea',
       nameEn: 'Cable Overhead Tricep Extension',
@@ -913,6 +1613,16 @@
       muscleSlug: 'triceps',
       mwSlug: 'cable-overhead-tricep-extension',
       keywords: 'triceps por encima cabeza cuerda polea tras nuca'
+    },
+    {
+      id: 'ex_cable_skullcrusher',
+      nameEs: 'Press francés en polea (Cable Skullcrusher)',
+      nameEn: 'Cable Skullcrusher',
+      category: 'Triceps',
+      equipment: 'cables',
+      muscleSlug: 'triceps',
+      mwSlug: 'cable-skullcrusher',
+      keywords: 'press frances polea barra cuerda triceps'
     },
     {
       id: 'ex_cable_kickback',
@@ -935,6 +1645,16 @@
       keywords: 'press cerrado barra banca triceps'
     },
     {
+      id: 'ex_jm_press',
+      nameEs: 'JM Press con barra (en banco)',
+      nameEn: 'Barbell JM Press',
+      category: 'Triceps',
+      equipment: 'barbell',
+      muscleSlug: 'triceps',
+      mwSlug: 'jm-press',
+      keywords: 'jm press barra triceps banca fuerza'
+    },
+    {
       id: 'ex_ez_skullcrusher',
       nameEs: 'Press francés con barra Z (Rompecráneos)',
       nameEn: 'EZ-Bar Skullcrusher',
@@ -943,6 +1663,16 @@
       muscleSlug: 'triceps',
       mwSlug: 'ez-bar-skullcrusher',
       keywords: 'press frances barra z rompecraneos triceps tumbado'
+    },
+    {
+      id: 'ex_incline_ez_skullcrusher',
+      nameEs: 'Press francés en banco inclinado con barra Z',
+      nameEn: 'Incline EZ-Bar Skullcrusher',
+      category: 'Triceps',
+      equipment: 'barbell',
+      muscleSlug: 'triceps',
+      mwSlug: 'incline-ez-bar-skullcrusher',
+      keywords: 'press frances inclinado barra z cabeza larga triceps'
     },
     {
       id: 'ex_db_skullcrusher',
@@ -955,14 +1685,34 @@
       keywords: 'press frances mancuernas rompecraneos triceps'
     },
     {
+      id: 'ex_tate_press',
+      nameEs: 'Press Tate con mancuernas',
+      nameEn: 'Dumbbell Tate Press',
+      category: 'Triceps',
+      equipment: 'dumbbells',
+      muscleSlug: 'triceps',
+      mwSlug: 'tate-press',
+      keywords: 'tate press mancuernas codos abiertos triceps'
+    },
+    {
       id: 'ex_db_overhead_tricep',
-      nameEs: 'Extensión de tríceps tras nuca con mancuerna',
+      nameEs: 'Extensión de tríceps tras nuca con mancuerna (Copa)',
       nameEn: 'Dumbbell Overhead Tricep Extension',
       category: 'Triceps',
       equipment: 'dumbbells',
       muscleSlug: 'triceps',
       mwSlug: 'dumbbell-overhead-tricep-extension',
       keywords: 'copa triceps mancuerna encima cabeza tras nuca'
+    },
+    {
+      id: 'ex_single_overhead_db_tricep',
+      nameEs: 'Extensión de tríceps tras nuca a una mano',
+      nameEn: 'Single-Arm Overhead Dumbbell Extension',
+      category: 'Triceps',
+      equipment: 'dumbbells',
+      muscleSlug: 'triceps',
+      mwSlug: 'single-arm-dumbbell-overhead-extension',
+      keywords: 'triceps unilateral mancuerna copa tras nuca una mano'
     },
     {
       id: 'ex_db_kickback',
@@ -1005,6 +1755,16 @@
       keywords: 'flexiones diamante cerradas triceps'
     },
     {
+      id: 'ex_bodyweight_tricep_ext',
+      nameEs: 'Extensión de tríceps con peso corporal (en barra/TRX)',
+      nameEn: 'Bodyweight Tricep Extension',
+      category: 'Triceps',
+      equipment: 'bodyweight',
+      muscleSlug: 'triceps',
+      mwSlug: 'bodyweight-tricep-extension',
+      keywords: 'press frances peso corporal barra trx calistenia triceps'
+    },
+    {
       id: 'ex_machine_tricep_ext',
       nameEs: 'Extensión / Fondos de tríceps en máquina',
       nameEn: 'Machine Tricep Extension / Dip',
@@ -1013,6 +1773,16 @@
       muscleSlug: 'triceps',
       mwSlug: 'machine-tricep-dip',
       keywords: 'fondos maquina triceps extension'
+    },
+    {
+      id: 'ex_assisted_tricep_dip',
+      nameEs: 'Fondos asistidos en máquina',
+      nameEn: 'Assisted Dip Machine',
+      category: 'Triceps',
+      equipment: 'machine',
+      muscleSlug: 'triceps',
+      mwSlug: 'assisted-dip-machine',
+      keywords: 'fondos asistidos contrapeso maquina triceps'
     },
 
     // ==================== LEGS / PIERNAS ====================
@@ -1037,6 +1807,26 @@
       keywords: 'sentadilla frontal barra cuadriceps'
     },
     {
+      id: 'ex_box_squat',
+      nameEs: 'Sentadilla al cajón con barra (Box Squat)',
+      nameEn: 'Barbell Box Squat',
+      category: 'Legs',
+      equipment: 'barbell',
+      muscleSlug: 'quads',
+      mwSlug: 'barbell-box-squat',
+      keywords: 'sentadilla cajon box squat barra piernas'
+    },
+    {
+      id: 'ex_zercher_squat',
+      nameEs: 'Sentadilla Zercher con barra',
+      nameEn: 'Barbell Zercher Squat',
+      category: 'Legs',
+      equipment: 'barbell',
+      muscleSlug: 'quads',
+      mwSlug: 'zercher-squat',
+      keywords: 'sentadilla zercher codos barra piernas core'
+    },
+    {
       id: 'ex_goblet_squat',
       nameEs: 'Sentadilla Goblet con mancuerna / kettlebell',
       nameEn: 'Goblet Squat',
@@ -1047,6 +1837,16 @@
       keywords: 'sentadilla goblet copa mancuerna pesa rusa cuadriceps'
     },
     {
+      id: 'ex_db_squat',
+      nameEs: 'Sentadilla con mancuernas a los lados',
+      nameEn: 'Dumbbell Squat',
+      category: 'Legs',
+      equipment: 'dumbbells',
+      muscleSlug: 'quads',
+      mwSlug: 'dumbbell-squat',
+      keywords: 'sentadilla mancuernas lados piernas'
+    },
+    {
       id: 'ex_hack_squat',
       nameEs: 'Sentadilla Hack en máquina',
       nameEn: 'Hack Squat Machine',
@@ -1055,6 +1855,36 @@
       muscleSlug: 'quads',
       mwSlug: 'machine-hack-squat',
       keywords: 'hack squat maquina sentadilla piernas cuadriceps'
+    },
+    {
+      id: 'ex_reverse_hack_squat',
+      nameEs: 'Sentadilla Hack invertida (mirando la máquina)',
+      nameEn: 'Reverse Hack Squat',
+      category: 'Legs',
+      equipment: 'machine',
+      muscleSlug: 'quads',
+      mwSlug: 'reverse-hack-squat',
+      keywords: 'hack invertida inversa maquina gluteo cuadriceps'
+    },
+    {
+      id: 'ex_pendulum_squat',
+      nameEs: 'Sentadilla péndulo en máquina (Pendulum Squat)',
+      nameEn: 'Pendulum Squat Machine',
+      category: 'Legs',
+      equipment: 'machine',
+      muscleSlug: 'quads',
+      mwSlug: 'pendulum-squat',
+      keywords: 'pendulum sentadilla pendulo maquina cuadriceps'
+    },
+    {
+      id: 'ex_belt_squat',
+      nameEs: 'Sentadilla con cinturón (Belt Squat)',
+      nameEn: 'Belt Squat',
+      category: 'Legs',
+      equipment: 'machine',
+      muscleSlug: 'quads',
+      mwSlug: 'belt-squat',
+      keywords: 'belt squat cinturon sentadilla sin cargar espalda piernas'
     },
     {
       id: 'ex_smith_squat',
@@ -1077,6 +1907,56 @@
       keywords: 'prensa piernas maquina cuadriceps gluteos'
     },
     {
+      id: 'ex_horizontal_leg_press',
+      nameEs: 'Prensa de piernas horizontal en máquina',
+      nameEn: 'Horizontal Leg Press',
+      category: 'Legs',
+      equipment: 'machine',
+      muscleSlug: 'quads',
+      mwSlug: 'horizontal-leg-press',
+      keywords: 'prensa horizontal sentado piernas placas maquina'
+    },
+    {
+      id: 'ex_single_leg_press',
+      nameEs: 'Prensa de piernas a una pierna',
+      nameEn: 'Single-Leg Press',
+      category: 'Legs',
+      equipment: 'machine',
+      muscleSlug: 'quads',
+      mwSlug: 'single-leg-press',
+      keywords: 'prensa unilateral una pierna cuadriceps gluteo'
+    },
+    {
+      id: 'ex_sissy_squat',
+      nameEs: 'Sentadilla Sissy',
+      nameEn: 'Sissy Squat',
+      category: 'Legs',
+      equipment: 'bodyweight',
+      muscleSlug: 'quads',
+      mwSlug: 'sissy-squat',
+      keywords: 'sentadilla sissy cuadriceps aislamiento'
+    },
+    {
+      id: 'ex_pistol_squat',
+      nameEs: 'Sentadilla a una pierna (Pistol Squat)',
+      nameEn: 'Pistol Squat',
+      category: 'Legs',
+      equipment: 'bodyweight',
+      muscleSlug: 'quads',
+      mwSlug: 'pistol-squat',
+      keywords: 'pistol squat sentadilla una pierna calistenia'
+    },
+    {
+      id: 'ex_wall_sit',
+      nameEs: 'Sentadilla isométrica en pared (Wall Sit)',
+      nameEn: 'Wall Sit',
+      category: 'Legs',
+      equipment: 'bodyweight',
+      muscleSlug: 'quads',
+      mwSlug: 'wall-sit',
+      keywords: 'wall sit pared isometrico aguante cuadriceps'
+    },
+    {
       id: 'ex_bulgarian_split_squat',
       nameEs: 'Sentadilla búlgara con mancuernas',
       nameEn: 'Bulgarian Split Squat',
@@ -1085,6 +1965,16 @@
       muscleSlug: 'quads',
       mwSlug: 'dumbbell-bulgarian-split-squat',
       keywords: 'sentadilla bulgara zancada banco pierna gluteo cuadriceps'
+    },
+    {
+      id: 'ex_smith_bulgarian_split_squat',
+      nameEs: 'Sentadilla búlgara en multipower (Smith)',
+      nameEn: 'Smith Machine Bulgarian Split Squat',
+      category: 'Legs',
+      equipment: 'machine',
+      muscleSlug: 'quads',
+      mwSlug: 'smith-machine-bulgarian-split-squat',
+      keywords: 'sentadilla bulgara multipower smith pierna gluteo'
     },
     {
       id: 'ex_lunges',
@@ -1097,6 +1987,16 @@
       keywords: 'zancadas estocadas tijeras caminando mancuernas pierna'
     },
     {
+      id: 'ex_barbell_lunges',
+      nameEs: 'Zancadas con barra',
+      nameEn: 'Barbell Lunges',
+      category: 'Legs',
+      equipment: 'barbell',
+      muscleSlug: 'quads',
+      mwSlug: 'barbell-lunge',
+      keywords: 'zancadas barra estocadas piernas'
+    },
+    {
       id: 'ex_reverse_lunge',
       nameEs: 'Zancadas hacia atrás con mancuernas',
       nameEn: 'Dumbbell Reverse Lunges',
@@ -1107,6 +2007,26 @@
       keywords: 'zancada atras inversa mancuerna pierna'
     },
     {
+      id: 'ex_curtsy_lunge',
+      nameEs: 'Zancada cruzada (Curtsy Lunge)',
+      nameEn: 'Dumbbell Curtsy Lunge',
+      category: 'Legs',
+      equipment: 'dumbbells',
+      muscleSlug: 'glutes',
+      mwSlug: 'dumbbell-curtsy-lunge',
+      keywords: 'zancada cruzada reverencia curtsy gluteo piernas'
+    },
+    {
+      id: 'ex_cossack_squat',
+      nameEs: 'Sentadilla lateral / Cosaca (Cossack Squat)',
+      nameEn: 'Cossack Squat',
+      category: 'Legs',
+      equipment: 'dumbbells',
+      muscleSlug: 'quads',
+      mwSlug: 'dumbbell-cossack-squat',
+      keywords: 'sentadilla cosaca lateral aductores movilidad pierna'
+    },
+    {
       id: 'ex_leg_extension',
       nameEs: 'Extensión de cuádriceps en máquina',
       nameEn: 'Leg Extension',
@@ -1115,6 +2035,16 @@
       muscleSlug: 'quads',
       mwSlug: 'machine-leg-extension',
       keywords: 'extension cuadriceps silla pierna maquina'
+    },
+    {
+      id: 'ex_single_leg_extension',
+      nameEs: 'Extensión de cuádriceps a una pierna',
+      nameEn: 'Single-Leg Extension',
+      category: 'Legs',
+      equipment: 'machine',
+      muscleSlug: 'quads',
+      mwSlug: 'single-leg-extension',
+      keywords: 'extension cuadriceps unilateral una pierna maquina'
     },
     {
       id: 'ex_romanian_deadlift',
@@ -1137,6 +2067,26 @@
       keywords: 'peso muerto rumano mancuernas femoral isquios'
     },
     {
+      id: 'ex_single_leg_rdl',
+      nameEs: 'Peso muerto rumano a una pierna con mancuerna',
+      nameEn: 'Single-Leg Dumbbell Romanian Deadlift',
+      category: 'Legs',
+      equipment: 'dumbbells',
+      muscleSlug: 'hamstrings',
+      mwSlug: 'single-leg-dumbbell-romanian-deadlift',
+      keywords: 'peso muerto una pierna unilateral equilibrio femoral gluteo'
+    },
+    {
+      id: 'ex_stiff_leg_deadlift',
+      nameEs: 'Peso muerto piernas rígidas con barra',
+      nameEn: 'Barbell Stiff-Legged Deadlift',
+      category: 'Legs',
+      equipment: 'barbell',
+      muscleSlug: 'hamstrings',
+      mwSlug: 'barbell-stiff-leg-deadlift',
+      keywords: 'peso muerto piernas rigidas barra femoral isquios'
+    },
+    {
       id: 'ex_leg_curl',
       nameEs: 'Curl femoral tumbado en máquina',
       nameEn: 'Lying Leg Curl',
@@ -1157,6 +2107,46 @@
       keywords: 'curl femoral sentado isquios maquina'
     },
     {
+      id: 'ex_standing_leg_curl',
+      nameEs: 'Curl femoral de pie a una pierna',
+      nameEn: 'Standing Single-Leg Curl',
+      category: 'Legs',
+      equipment: 'machine',
+      muscleSlug: 'hamstrings',
+      mwSlug: 'standing-leg-curl',
+      keywords: 'curl femoral de pie unilateral maquina isquios'
+    },
+    {
+      id: 'ex_nordic_curl',
+      nameEs: 'Curl nórdico de isquiotibiales',
+      nameEn: 'Nordic Hamstring Curl',
+      category: 'Legs',
+      equipment: 'bodyweight',
+      muscleSlug: 'hamstrings',
+      mwSlug: 'nordic-hamstring-curl',
+      keywords: 'curl nordico isquios femoral peso corporal'
+    },
+    {
+      id: 'ex_fitball_leg_curl',
+      nameEs: 'Curl femoral en fitball (pelota suiza)',
+      nameEn: 'Stability Ball Leg Curl',
+      category: 'Legs',
+      equipment: 'bodyweight',
+      muscleSlug: 'hamstrings',
+      mwSlug: 'stability-ball-leg-curl',
+      keywords: 'curl femoral fitball pelota suiza isquios'
+    },
+    {
+      id: 'ex_good_mornings',
+      nameEs: 'Buenos días con barra (Good Morning)',
+      nameEn: 'Barbell Good Morning',
+      category: 'Legs',
+      equipment: 'barbell',
+      muscleSlug: 'hamstrings',
+      mwSlug: 'barbell-good-morning',
+      keywords: 'buenos dias good morning barra isquios femoral lumbar'
+    },
+    {
       id: 'ex_adductor_machine',
       nameEs: 'Aductores en máquina',
       nameEn: 'Hip Adduction Machine',
@@ -1167,14 +2157,14 @@
       keywords: 'aductores cerrar piernas maquina'
     },
     {
-      id: 'ex_abductor_machine',
-      nameEs: 'Abductores en máquina',
-      nameEn: 'Hip Abduction Machine',
+      id: 'ex_copenhagen_plank',
+      nameEs: 'Plancha de Copenhague (aductores)',
+      nameEn: 'Copenhagen Plank',
       category: 'Legs',
-      equipment: 'machine',
-      muscleSlug: 'glutes',
-      mwSlug: 'machine-hip-abduction',
-      keywords: 'abductores abrir piernas gluteo medio maquina'
+      equipment: 'bodyweight',
+      muscleSlug: 'quads',
+      mwSlug: 'copenhagen-plank',
+      keywords: 'copenhagen plancha aductores entrepierna isometrico'
     },
 
     // ==================== GLUTES / GLÚTEOS ====================
@@ -1189,6 +2179,16 @@
       keywords: 'hip thrust empuje cadera gluteos barra'
     },
     {
+      id: 'ex_smith_hip_thrust',
+      nameEs: 'Hip Thrust en multipower (Smith)',
+      nameEn: 'Smith Machine Hip Thrust',
+      category: 'Glutes',
+      equipment: 'machine',
+      muscleSlug: 'glutes',
+      mwSlug: 'smith-machine-hip-thrust',
+      keywords: 'hip thrust multipower smith gluteos'
+    },
+    {
       id: 'ex_machine_hip_thrust',
       nameEs: 'Hip Thrust en máquina',
       nameEn: 'Machine Hip Thrust',
@@ -1196,7 +2196,27 @@
       equipment: 'machine',
       muscleSlug: 'glutes',
       mwSlug: 'machine-hip-thrust',
-      keywords: 'hip thrust maquina gluteos'
+      keywords: 'hip thrust maquina bootymaker gluteos'
+    },
+    {
+      id: 'ex_single_leg_hip_thrust',
+      nameEs: 'Hip Thrust a una pierna (unilateral / B-Stance)',
+      nameEn: 'Single-Leg Hip Thrust',
+      category: 'Glutes',
+      equipment: 'bodyweight',
+      muscleSlug: 'glutes',
+      mwSlug: 'single-leg-hip-thrust',
+      keywords: 'hip thrust una pierna b stance unilateral gluteo'
+    },
+    {
+      id: 'ex_kas_glute_bridge',
+      nameEs: 'Puente Kas con barra (Kas Glute Bridge)',
+      nameEn: 'Barbell Kas Glute Bridge',
+      category: 'Glutes',
+      equipment: 'barbell',
+      muscleSlug: 'glutes',
+      mwSlug: 'kas-glute-bridge',
+      keywords: 'kas glute bridge puente corto barra gluteos'
     },
     {
       id: 'ex_glute_bridge',
@@ -1207,6 +2227,26 @@
       muscleSlug: 'glutes',
       mwSlug: 'glute-bridge',
       keywords: 'puente gluteo suelo cadera'
+    },
+    {
+      id: 'ex_frog_pumps',
+      nameEs: 'Frog Pumps (puente rana para glúteos)',
+      nameEn: 'Frog Pumps',
+      category: 'Glutes',
+      equipment: 'bodyweight',
+      muscleSlug: 'glutes',
+      mwSlug: 'frog-pumps',
+      keywords: 'frog pumps rana suelo gluteos'
+    },
+    {
+      id: 'ex_sumo_deadlift',
+      nameEs: 'Peso muerto sumo con barra',
+      nameEn: 'Barbell Sumo Deadlift',
+      category: 'Glutes',
+      equipment: 'barbell',
+      muscleSlug: 'glutes',
+      mwSlug: 'barbell-sumo-deadlift',
+      keywords: 'peso muerto sumo barra gluteos aductores piernas'
     },
     {
       id: 'ex_sumo_squat',
@@ -1229,6 +2269,36 @@
       keywords: 'patada gluteo polea tobillera'
     },
     {
+      id: 'ex_machine_glute_kickback',
+      nameEs: 'Patada de glúteo en máquina',
+      nameEn: 'Glute Kickback Machine',
+      category: 'Glutes',
+      equipment: 'machine',
+      muscleSlug: 'glutes',
+      mwSlug: 'machine-glute-kickback',
+      keywords: 'patada gluteo maquina multicadera'
+    },
+    {
+      id: 'ex_abductor_machine',
+      nameEs: 'Abductores en máquina',
+      nameEn: 'Hip Abduction Machine',
+      category: 'Glutes',
+      equipment: 'machine',
+      muscleSlug: 'glutes',
+      mwSlug: 'machine-hip-abduction',
+      keywords: 'abductores abrir piernas gluteo medio maquina'
+    },
+    {
+      id: 'ex_cable_hip_abduction',
+      nameEs: 'Abducción de cadera en polea (de pie)',
+      nameEn: 'Standing Cable Hip Abduction',
+      category: 'Glutes',
+      equipment: 'cables',
+      muscleSlug: 'glutes',
+      mwSlug: 'cable-hip-abduction',
+      keywords: 'abduccion cadera polea tobillera gluteo medio'
+    },
+    {
       id: 'ex_cable_pull_through',
       nameEs: 'Pull-through en polea baja',
       nameEn: 'Cable Pull-Through',
@@ -1237,6 +2307,16 @@
       muscleSlug: 'glutes',
       mwSlug: 'cable-pull-through',
       keywords: 'pull through cuerda polea bisagra cadera gluteos'
+    },
+    {
+      id: 'ex_45_glute_hyperextension',
+      nameEs: 'Extensiones de glúteo en banco a 45°',
+      nameEn: '45-Degree Glute Back Extension',
+      category: 'Glutes',
+      equipment: 'bodyweight',
+      muscleSlug: 'glutes',
+      mwSlug: '45-degree-glute-extension',
+      keywords: 'hiperextension gluteo banco 45 pies hacia fuera'
     },
     {
       id: 'ex_step_ups',
@@ -1257,6 +2337,26 @@
       muscleSlug: 'glutes',
       mwSlug: 'kettlebell-swing',
       keywords: 'swing kettlebell pesa rusa gluteo isquios'
+    },
+    {
+      id: 'ex_band_clamshells',
+      nameEs: 'Almejas con goma (Banded Clamshells)',
+      nameEn: 'Banded Clamshells',
+      category: 'Glutes',
+      equipment: 'band',
+      muscleSlug: 'glutes',
+      mwSlug: 'banded-clamshells',
+      keywords: 'clamshell almeja banda elastica gluteo medio'
+    },
+    {
+      id: 'ex_band_monster_walk',
+      nameEs: 'Caminata lateral con goma (Monster Walk)',
+      nameEn: 'Banded Monster Walk',
+      category: 'Glutes',
+      equipment: 'band',
+      muscleSlug: 'glutes',
+      mwSlug: 'banded-monster-walk',
+      keywords: 'monster walk banda lateral gluteo medio activacion'
     },
 
     // ==================== CALVES / GEMELOS ====================
@@ -1291,6 +2391,26 @@
       keywords: 'gemelos prensa piernas pantorrillas'
     },
     {
+      id: 'ex_smith_calf_raise',
+      nameEs: 'Elevaciones de gemelos en multipower (Smith)',
+      nameEn: 'Smith Machine Calf Raise',
+      category: 'Calves',
+      equipment: 'machine',
+      muscleSlug: 'calves',
+      mwSlug: 'smith-machine-calf-raise',
+      keywords: 'gemelos multipower smith step escalon'
+    },
+    {
+      id: 'ex_hack_calf_raise',
+      nameEs: 'Gemelos en máquina Hack Squat',
+      nameEn: 'Hack Squat Calf Raise',
+      category: 'Calves',
+      equipment: 'machine',
+      muscleSlug: 'calves',
+      mwSlug: 'hack-squat-calf-raise',
+      keywords: 'gemelos hack squat maquina'
+    },
+    {
       id: 'ex_db_calf_raise',
       nameEs: 'Elevación de talones a una pierna con mancuerna',
       nameEn: 'Single-Leg Dumbbell Calf Raise',
@@ -1299,6 +2419,26 @@
       muscleSlug: 'calves',
       mwSlug: 'dumbbell-calf-raise',
       keywords: 'gemelo unilateral mancuerna escalon'
+    },
+    {
+      id: 'ex_donkey_calf_raise',
+      nameEs: 'Elevaciones de gemelos tipo burro (Donkey Calf Raise)',
+      nameEn: 'Donkey Calf Raise',
+      category: 'Calves',
+      equipment: 'machine',
+      muscleSlug: 'calves',
+      mwSlug: 'donkey-calf-raise',
+      keywords: 'gemelos burro donkey inclinado'
+    },
+    {
+      id: 'ex_tibialis_raise',
+      nameEs: 'Elevación de puntas (Tibial anterior en pared)',
+      nameEn: 'Tibialis Raise',
+      category: 'Calves',
+      equipment: 'bodyweight',
+      muscleSlug: 'calves',
+      mwSlug: 'tibialis-raise',
+      keywords: 'tibial anterior puntas pared espinilla gemelos'
     },
 
     // ==================== CORE / ABDOMEN ====================
@@ -1323,6 +2463,16 @@
       keywords: 'plancha lateral oblicuos abdomen'
     },
     {
+      id: 'ex_plank_shoulder_taps',
+      nameEs: 'Plancha tocando hombros (Shoulder Taps)',
+      nameEn: 'Plank Shoulder Taps',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'plank-shoulder-taps',
+      keywords: 'plancha tocando hombros estabilidad core'
+    },
+    {
       id: 'ex_hanging_leg_raise',
       nameEs: 'Elevaciones de piernas colgado',
       nameEn: 'Hanging Leg Raises',
@@ -1343,6 +2493,26 @@
       keywords: 'elevacion rodillas abdomen colgado paralelas'
     },
     {
+      id: 'ex_toes_to_bar',
+      nameEs: 'Pies a la barra (Toes to Bar)',
+      nameEn: 'Toes to Bar',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'toes-to-bar',
+      keywords: 'toes to bar pies barra crossfit abdomen'
+    },
+    {
+      id: 'ex_captains_chair_leg_raise',
+      nameEs: 'Elevación de piernas en silla del capitán (fondos)',
+      nameEn: "Captain's Chair Leg Raise",
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'captains-chair-leg-raise',
+      keywords: 'silla capitan antebrazos apoyados piernas abdomen'
+    },
+    {
       id: 'ex_cable_crunch',
       nameEs: 'Crunch abdominal en polea alta',
       nameEn: 'Cable Crunch',
@@ -1351,6 +2521,16 @@
       muscleSlug: 'abdominals',
       mwSlug: 'cable-crunch',
       keywords: 'crunch polea cuerda rodillas abdomen'
+    },
+    {
+      id: 'ex_machine_crunch',
+      nameEs: 'Crunch abdominal en máquina',
+      nameEn: 'Machine Abdominal Crunch',
+      category: 'Core',
+      equipment: 'machine',
+      muscleSlug: 'abdominals',
+      mwSlug: 'machine-crunch',
+      keywords: 'abdominales maquina sentado crunch'
     },
     {
       id: 'ex_crunch',
@@ -1363,6 +2543,26 @@
       keywords: 'crunch encogimientos suelo abdominales'
     },
     {
+      id: 'ex_reverse_crunch',
+      nameEs: 'Crunch inverso en banco / suelo',
+      nameEn: 'Reverse Crunch',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'reverse-crunch',
+      keywords: 'crunch inverso abdomen inferior piernas'
+    },
+    {
+      id: 'ex_decline_situp',
+      nameEs: 'Abdominales en banco declinado',
+      nameEn: 'Decline Sit-up',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'decline-sit-up',
+      keywords: 'banco declinado sit up abdominales'
+    },
+    {
       id: 'ex_bicycle_crunch',
       nameEs: 'Abdominales bicicleta',
       nameEn: 'Bicycle Crunch',
@@ -1371,6 +2571,16 @@
       muscleSlug: 'obliques',
       mwSlug: 'bicycle-crunch',
       keywords: 'bicicleta abdominales oblicuos'
+    },
+    {
+      id: 'ex_v_ups',
+      nameEs: 'Abdominales en V (V-Ups)',
+      nameEn: 'V-Ups',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'v-ups',
+      keywords: 'v ups abdominales en v navajas'
     },
     {
       id: 'ex_russian_twist',
@@ -1413,6 +2623,26 @@
       keywords: 'lenador polea oblicuos giros abdomen'
     },
     {
+      id: 'ex_db_side_bend',
+      nameEs: 'Flexión lateral de tronco con mancuerna',
+      nameEn: 'Dumbbell Side Bend',
+      category: 'Core',
+      equipment: 'dumbbells',
+      muscleSlug: 'obliques',
+      mwSlug: 'dumbbell-side-bend',
+      keywords: 'flexion lateral mancuerna oblicuos cintura'
+    },
+    {
+      id: 'ex_kb_windmill',
+      nameEs: 'Molino con pesa rusa (Kettlebell Windmill)',
+      nameEn: 'Kettlebell Windmill',
+      category: 'Core',
+      equipment: 'kettlebells',
+      muscleSlug: 'obliques',
+      mwSlug: 'kettlebell-windmill',
+      keywords: 'molino kettlebell pesa rusa oblicuos movilidad'
+    },
+    {
       id: 'ex_dead_bug',
       nameEs: 'Bicho muerto (Dead Bug)',
       nameEn: 'Dead Bug',
@@ -1421,6 +2651,46 @@
       muscleSlug: 'abdominals',
       mwSlug: 'dead-bug',
       keywords: 'dead bug bicho muerto estabilidad abdomen'
+    },
+    {
+      id: 'ex_bird_dog',
+      nameEs: 'Perro pájaro (Bird Dog)',
+      nameEn: 'Bird Dog',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'bird-dog',
+      keywords: 'bird dog perro pajaro estabilidad lumbar core'
+    },
+    {
+      id: 'ex_hollow_hold',
+      nameEs: 'Hollow Body Hold (barquita)',
+      nameEn: 'Hollow Body Hold',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'hollow-hold',
+      keywords: 'hollow hold barquita gimnastico abdomen isometrico'
+    },
+    {
+      id: 'ex_mountain_climbers',
+      nameEs: 'Escaladores (Mountain Climbers)',
+      nameEn: 'Mountain Climbers',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'mountain-climbers',
+      keywords: 'escaladores mountain climbers cardio abdomen'
+    },
+    {
+      id: 'ex_dragon_flag',
+      nameEs: 'Dragon Flag en banco',
+      nameEn: 'Dragon Flag',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'dragon-flag',
+      keywords: 'dragon flag banco bruce lee abdomen calistenia'
     },
 
     // ==================== FOREARMS / ANTEBRAZOS ====================
@@ -1435,6 +2705,16 @@
       keywords: 'antebrazos muneca flexores barra'
     },
     {
+      id: 'ex_behind_back_wrist_curl',
+      nameEs: 'Curl de muñeca por detrás con barra',
+      nameEn: 'Behind-the-Back Barbell Wrist Curl',
+      category: 'Forearms',
+      equipment: 'barbell',
+      muscleSlug: 'forearms',
+      mwSlug: 'behind-the-back-barbell-wrist-curl',
+      keywords: 'antebrazos muneca detras espalda barra'
+    },
+    {
       id: 'ex_db_wrist_curl',
       nameEs: 'Curl de muñeca con mancuernas',
       nameEn: 'Dumbbell Wrist Curl',
@@ -1443,6 +2723,26 @@
       muscleSlug: 'forearms',
       mwSlug: 'dumbbell-wrist-curl',
       keywords: 'antebrazos muneca mancuernas'
+    },
+    {
+      id: 'ex_reverse_wrist_curl',
+      nameEs: 'Curl de muñeca inverso con barra',
+      nameEn: 'Reverse Barbell Wrist Curl',
+      category: 'Forearms',
+      equipment: 'barbell',
+      muscleSlug: 'forearms',
+      mwSlug: 'reverse-barbell-wrist-curl',
+      keywords: 'extensores muneca antebrazo inverso barra'
+    },
+    {
+      id: 'ex_reverse_db_wrist_curl',
+      nameEs: 'Curl de muñeca inverso con mancuernas',
+      nameEn: 'Reverse Dumbbell Wrist Curl',
+      category: 'Forearms',
+      equipment: 'dumbbells',
+      muscleSlug: 'forearms',
+      mwSlug: 'reverse-dumbbell-wrist-curl',
+      keywords: 'extensores muneca mancuerna antebrazo'
     },
     {
       id: 'ex_reverse_barbell_curl',
@@ -1455,6 +2755,26 @@
       keywords: 'curl inverso prono antebrazo braquiorradial barra'
     },
     {
+      id: 'ex_reverse_ez_curl',
+      nameEs: 'Curl inverso con barra Z',
+      nameEn: 'Reverse EZ-Bar Curl',
+      category: 'Forearms',
+      equipment: 'barbell',
+      muscleSlug: 'forearms',
+      mwSlug: 'reverse-ez-bar-curl',
+      keywords: 'curl inverso prono barra z antebrazo'
+    },
+    {
+      id: 'ex_wrist_roller',
+      nameEs: 'Rodillo de muñeca (Wrist Roller)',
+      nameEn: 'Wrist Roller',
+      category: 'Forearms',
+      equipment: 'barbell',
+      muscleSlug: 'forearms',
+      mwSlug: 'wrist-roller',
+      keywords: 'rodillo cuerda antebrazo muneca agarre'
+    },
+    {
       id: 'ex_farmers_walk',
       nameEs: 'Paseo del granjero con mancuernas',
       nameEn: "Farmer's Walk",
@@ -1465,215 +2785,506 @@
       keywords: 'paseo granjero agarre antebrazo trapecio'
     },
     {
-      id: 'ex_reverse_wrist_curl',
-      nameEs: 'Curl de muñeca inverso con barra',
-      nameEn: 'Reverse Barbell Wrist Curl',
+      id: 'ex_dead_hang',
+      nameEs: 'Colgado en barra (Dead Hang / Agarre)',
+      nameEn: 'Dead Hang',
+      category: 'Forearms',
+      equipment: 'bodyweight',
+      muscleSlug: 'forearms',
+      mwSlug: 'dead-hang',
+      keywords: 'dead hang colgado barra agarre descompresion antebrazo'
+    },
+
+    // ==================== EXTRA VARIATIONS ACROSS ALL GROUPS ====================
+    {
+      id: 'ex_banded_pushups',
+      nameEs: 'Flexiones con banda elástica',
+      nameEn: 'Resistance Band Push-ups',
+      category: 'Chest',
+      equipment: 'band',
+      muscleSlug: 'chest',
+      mwSlug: 'band-push-up',
+      keywords: 'flexiones goma banda elastica pecho'
+    },
+    {
+      id: 'ex_plyo_pushups',
+      nameEs: 'Flexiones pliométricas (con palmada)',
+      nameEn: 'Plyometric Clap Push-ups',
+      category: 'Chest',
+      equipment: 'bodyweight',
+      muscleSlug: 'chest',
+      mwSlug: 'plyometric-push-ups',
+      keywords: 'flexiones explosivas palmada pliometricas pecho'
+    },
+    {
+      id: 'ex_decline_smith_press',
+      nameEs: 'Press declinado en multipower (Smith)',
+      nameEn: 'Decline Smith Machine Bench Press',
+      category: 'Chest',
+      equipment: 'machine',
+      muscleSlug: 'chest',
+      mwSlug: 'decline-smith-machine-bench-press',
+      keywords: 'pecho declinado multipower smith'
+    },
+    {
+      id: 'ex_decline_db_flyes',
+      nameEs: 'Aperturas declinadas con mancuernas',
+      nameEn: 'Decline Dumbbell Flyes',
+      category: 'Chest',
+      equipment: 'dumbbells',
+      muscleSlug: 'chest',
+      mwSlug: 'decline-dumbbell-fly',
+      keywords: 'aperturas declinadas mancuernas pecho inferior'
+    },
+    {
+      id: 'ex_kneeling_single_pulldown',
+      nameEs: 'Jalón unilateral de rodillas en polea',
+      nameEn: 'Kneeling Single-Arm Cable Pulldown',
+      category: 'Back',
+      equipment: 'cables',
+      muscleSlug: 'lats',
+      mwSlug: 'kneeling-single-arm-cable-pulldown',
+      keywords: 'jalon rodillas suelo polea unilateral dorsal'
+    },
+    {
+      id: 'ex_iso_lateral_pulldown',
+      nameEs: 'Jalón convergente en máquina de discos (Hammer)',
+      nameEn: 'Iso-Lateral Lat Pulldown Machine',
+      category: 'Back',
+      equipment: 'machine',
+      muscleSlug: 'lats',
+      mwSlug: 'iso-lateral-lat-pulldown',
+      keywords: 'jalon hammer palanca discos dorsal maquina'
+    },
+    {
+      id: 'ex_machine_pullover',
+      nameEs: 'Pullover en máquina (Nautilus)',
+      nameEn: 'Machine Pullover',
+      category: 'Back',
+      equipment: 'machine',
+      muscleSlug: 'lats',
+      mwSlug: 'machine-pullover',
+      keywords: 'pullover maquina dorsal espalda'
+    },
+    {
+      id: 'ex_reverse_hyperextension',
+      nameEs: 'Hiperextensión inversa (Reverse Hyper)',
+      nameEn: 'Reverse Hyperextension',
+      category: 'Back',
+      equipment: 'machine',
+      muscleSlug: 'lowerback',
+      mwSlug: 'reverse-hyperextension',
+      keywords: 'reverse hyper hiperextension inversa lumbar gluteo'
+    },
+    {
+      id: 'ex_band_seated_row',
+      nameEs: 'Remo sentado con banda elástica',
+      nameEn: 'Resistance Band Seated Row',
+      category: 'Back',
+      equipment: 'band',
+      muscleSlug: 'lats',
+      mwSlug: 'band-seated-row',
+      keywords: 'remo banda goma elastica espalda'
+    },
+    {
+      id: 'ex_behind_neck_press',
+      nameEs: 'Press tras nuca con barra',
+      nameEn: 'Barbell Behind-the-Neck Press',
+      category: 'Shoulders',
+      equipment: 'barbell',
+      muscleSlug: 'shoulders',
+      mwSlug: 'barbell-behind-the-neck-press',
+      keywords: 'press tras nuca barra hombros'
+    },
+    {
+      id: 'ex_z_press',
+      nameEs: 'Press Z sentado en el suelo',
+      nameEn: 'Barbell Z-Press',
+      category: 'Shoulders',
+      equipment: 'barbell',
+      muscleSlug: 'shoulders',
+      mwSlug: 'z-press',
+      keywords: 'z press sentado suelo sin respaldo barra hombros core'
+    },
+    {
+      id: 'ex_iso_shoulder_press',
+      nameEs: 'Press de hombros en máquina de discos (Hammer)',
+      nameEn: 'Iso-Lateral Shoulder Press Machine',
+      category: 'Shoulders',
+      equipment: 'machine',
+      muscleSlug: 'shoulders',
+      mwSlug: 'iso-lateral-shoulder-press',
+      keywords: 'press hombro hammer palanca discos maquina'
+    },
+    {
+      id: 'ex_cable_rope_front_raise',
+      nameEs: 'Elevación frontal en polea con cuerda',
+      nameEn: 'Cable Rope Front Raise',
+      category: 'Shoulders',
+      equipment: 'cables',
+      muscleSlug: 'shoulders',
+      mwSlug: 'cable-rope-front-raise',
+      keywords: 'elevacion frontal cuerda polea hombros'
+    },
+    {
+      id: 'ex_single_arm_cable_rear_delt',
+      nameEs: 'Deltoides posterior en polea a una mano',
+      nameEn: 'Single-Arm Cable Rear Delt Fly',
+      category: 'Shoulders',
+      equipment: 'cables',
+      muscleSlug: 'shoulders',
+      mwSlug: 'single-arm-cable-rear-delt-fly',
+      keywords: 'posterior hombro polea unilateral una mano'
+    },
+    {
+      id: 'ex_band_lateral_raise',
+      nameEs: 'Elevaciones laterales con goma elástica',
+      nameEn: 'Resistance Band Lateral Raise',
+      category: 'Shoulders',
+      equipment: 'band',
+      muscleSlug: 'shoulders',
+      mwSlug: 'band-lateral-raise',
+      keywords: 'elevaciones laterales banda goma hombros'
+    },
+    {
+      id: 'ex_smith_drag_curl',
+      nameEs: 'Curl Drag en multipower (Smith)',
+      nameEn: 'Smith Machine Drag Curl',
+      category: 'Biceps',
+      equipment: 'machine',
+      muscleSlug: 'biceps',
+      mwSlug: 'smith-machine-drag-curl',
+      keywords: 'drag curl multipower smith biceps'
+    },
+    {
+      id: 'ex_barbell_preacher_curl',
+      nameEs: 'Curl en banco Scott con barra recta',
+      nameEn: 'Barbell Preacher Curl',
+      category: 'Biceps',
+      equipment: 'barbell',
+      muscleSlug: 'biceps',
+      mwSlug: 'barbell-preacher-curl',
+      keywords: 'curl scott predicador barra recta biceps'
+    },
+    {
+      id: 'ex_seated_hammer_curl',
+      nameEs: 'Curl martillo sentado con mancuernas',
+      nameEn: 'Seated Dumbbell Hammer Curl',
+      category: 'Biceps',
+      equipment: 'dumbbells',
+      muscleSlug: 'biceps',
+      mwSlug: 'seated-dumbbell-hammer-curl',
+      keywords: 'curl martillo sentado mancuernas biceps'
+    },
+    {
+      id: 'ex_cable_ez_curl',
+      nameEs: 'Curl de bíceps en polea baja con barra Z',
+      nameEn: 'Cable EZ-Bar Curl',
+      category: 'Biceps',
+      equipment: 'cables',
+      muscleSlug: 'biceps',
+      mwSlug: 'cable-ez-bar-curl',
+      keywords: 'curl polea barra z biceps'
+    },
+    {
+      id: 'ex_smith_close_grip_bench',
+      nameEs: 'Press cerrado en multipower (Smith)',
+      nameEn: 'Smith Machine Close-Grip Bench Press',
+      category: 'Triceps',
+      equipment: 'machine',
+      muscleSlug: 'triceps',
+      mwSlug: 'smith-machine-close-grip-bench-press',
+      keywords: 'press cerrado multipower smith triceps'
+    },
+    {
+      id: 'ex_barbell_skullcrusher',
+      nameEs: 'Press francés con barra recta',
+      nameEn: 'Barbell Skullcrusher',
+      category: 'Triceps',
+      equipment: 'barbell',
+      muscleSlug: 'triceps',
+      mwSlug: 'barbell-skullcrusher',
+      keywords: 'press frances barra recta rompecraneos triceps'
+    },
+    {
+      id: 'ex_cable_overhead_bar_tricep',
+      nameEs: 'Extensión de tríceps tras nuca en polea con barra',
+      nameEn: 'Cable Bar Overhead Tricep Extension',
+      category: 'Triceps',
+      equipment: 'cables',
+      muscleSlug: 'triceps',
+      mwSlug: 'cable-bar-overhead-tricep-extension',
+      keywords: 'triceps tras nuca barra polea encima cabeza'
+    },
+    {
+      id: 'ex_single_arm_cable_overhead_tricep',
+      nameEs: 'Extensión de tríceps tras nuca en polea a una mano',
+      nameEn: 'Single-Arm Cable Overhead Tricep Extension',
+      category: 'Triceps',
+      equipment: 'cables',
+      muscleSlug: 'triceps',
+      mwSlug: 'single-arm-cable-overhead-tricep-extension',
+      keywords: 'triceps katana polea una mano encima cabeza'
+    },
+    {
+      id: 'ex_pause_squat',
+      nameEs: 'Sentadilla con pausa abajo (Pause Squat)',
+      nameEn: 'Barbell Pause Squat',
+      category: 'Legs',
+      equipment: 'barbell',
+      muscleSlug: 'quads',
+      mwSlug: 'barbell-pause-squat',
+      keywords: 'sentadilla pausa barra fuerza piernas'
+    },
+    {
+      id: 'ex_overhead_squat',
+      nameEs: 'Sentadilla de arranque (Overhead Squat)',
+      nameEn: 'Barbell Overhead Squat',
+      category: 'Legs',
+      equipment: 'barbell',
+      muscleSlug: 'quads',
+      mwSlug: 'barbell-overhead-squat',
+      keywords: 'overhead squat barra encima cabeza crossfit piernas'
+    },
+    {
+      id: 'ex_v_squat',
+      nameEs: 'Sentadilla en máquina V-Squat',
+      nameEn: 'V-Squat Machine',
+      category: 'Legs',
+      equipment: 'machine',
+      muscleSlug: 'quads',
+      mwSlug: 'v-squat-machine',
+      keywords: 'v squat maquina sentadilla piernas cuadriceps'
+    },
+    {
+      id: 'ex_kb_goblet_squat',
+      nameEs: 'Sentadilla Goblet con pesa rusa (Kettlebell)',
+      nameEn: 'Kettlebell Goblet Squat',
+      category: 'Legs',
+      equipment: 'kettlebells',
+      muscleSlug: 'quads',
+      mwSlug: 'kettlebell-goblet-squat',
+      keywords: 'sentadilla goblet kettlebell pesa rusa piernas'
+    },
+    {
+      id: 'ex_barbell_bulgarian_split_squat',
+      nameEs: 'Sentadilla búlgara con barra',
+      nameEn: 'Barbell Bulgarian Split Squat',
+      category: 'Legs',
+      equipment: 'barbell',
+      muscleSlug: 'quads',
+      mwSlug: 'barbell-bulgarian-split-squat',
+      keywords: 'sentadilla bulgara barra pierna gluteo'
+    },
+    {
+      id: 'ex_barbell_walking_lunge',
+      nameEs: 'Zancadas caminando con barra',
+      nameEn: 'Barbell Walking Lunges',
+      category: 'Legs',
+      equipment: 'barbell',
+      muscleSlug: 'quads',
+      mwSlug: 'barbell-walking-lunges',
+      keywords: 'zancadas caminando barra piernas'
+    },
+    {
+      id: 'ex_air_squat',
+      nameEs: 'Sentadillas sin peso (Air Squat)',
+      nameEn: 'Bodyweight Squat (Air Squat)',
+      category: 'Legs',
+      equipment: 'bodyweight',
+      muscleSlug: 'quads',
+      mwSlug: 'bodyweight-squat',
+      keywords: 'sentadilla libre aire peso corporal piernas'
+    },
+    {
+      id: 'ex_jump_squat',
+      nameEs: 'Sentadillas con salto (Jump Squat)',
+      nameEn: 'Jump Squat',
+      category: 'Legs',
+      equipment: 'bodyweight',
+      muscleSlug: 'quads',
+      mwSlug: 'jump-squat',
+      keywords: 'sentadilla salto pliometria piernas potencia'
+    },
+    {
+      id: 'ex_spanish_squat',
+      nameEs: 'Sentadilla española con goma (Spanish Squat)',
+      nameEn: 'Spanish Squat',
+      category: 'Legs',
+      equipment: 'band',
+      muscleSlug: 'quads',
+      mwSlug: 'spanish-squat',
+      keywords: 'sentadilla espanola banda goma rodilla tendon cuadriceps'
+    },
+    {
+      id: 'ex_glute_ham_raise',
+      nameEs: 'Glute-Ham Raise (GHD)',
+      nameEn: 'Glute-Ham Raise (GHR)',
+      category: 'Legs',
+      equipment: 'bodyweight',
+      muscleSlug: 'hamstrings',
+      mwSlug: 'glute-ham-raise',
+      keywords: 'ghr ghd isquios gluteos banco'
+    },
+    {
+      id: 'ex_smith_rdl',
+      nameEs: 'Peso muerto rumano en multipower (Smith)',
+      nameEn: 'Smith Machine Romanian Deadlift',
+      category: 'Legs',
+      equipment: 'machine',
+      muscleSlug: 'hamstrings',
+      mwSlug: 'smith-machine-romanian-deadlift',
+      keywords: 'peso muerto rumano multipower smith femoral gluteo'
+    },
+    {
+      id: 'ex_cable_adduction',
+      nameEs: 'Aducción de cadera en polea baja',
+      nameEn: 'Cable Hip Adduction',
+      category: 'Legs',
+      equipment: 'cables',
+      muscleSlug: 'quads',
+      mwSlug: 'cable-hip-adduction',
+      keywords: 'aductores polea tobillera entrepierna'
+    },
+    {
+      id: 'ex_db_hip_thrust',
+      nameEs: 'Hip Thrust con mancuerna',
+      nameEn: 'Dumbbell Hip Thrust',
+      category: 'Glutes',
+      equipment: 'dumbbells',
+      muscleSlug: 'glutes',
+      mwSlug: 'dumbbell-hip-thrust',
+      keywords: 'hip thrust mancuerna banco gluteos'
+    },
+    {
+      id: 'ex_kb_sumo_squat',
+      nameEs: 'Sentadilla sumo con pesa rusa (Kettlebell)',
+      nameEn: 'Kettlebell Sumo Squat',
+      category: 'Glutes',
+      equipment: 'kettlebells',
+      muscleSlug: 'glutes',
+      mwSlug: 'kettlebell-sumo-squat',
+      keywords: 'sentadilla sumo kettlebell pesa rusa gluteo'
+    },
+    {
+      id: 'ex_donkey_kicks',
+      nameEs: 'Patada de burro en suelo (Donkey Kicks)',
+      nameEn: 'Donkey Kicks',
+      category: 'Glutes',
+      equipment: 'bodyweight',
+      muscleSlug: 'glutes',
+      mwSlug: 'donkey-kicks',
+      keywords: 'patada burro suelo cuadrupedia gluteos'
+    },
+    {
+      id: 'ex_fire_hydrants',
+      nameEs: 'Apertura lateral en cuadrupedia (Fire Hydrants)',
+      nameEn: 'Fire Hydrants',
+      category: 'Glutes',
+      equipment: 'bodyweight',
+      muscleSlug: 'glutes',
+      mwSlug: 'fire-hydrants',
+      keywords: 'fire hydrant cuadrupedia gluteo medio cadera'
+    },
+    {
+      id: 'ex_barbell_standing_calf_raise',
+      nameEs: 'Elevaciones de gemelos de pie con barra',
+      nameEn: 'Barbell Standing Calf Raise',
+      category: 'Calves',
+      equipment: 'barbell',
+      muscleSlug: 'calves',
+      mwSlug: 'barbell-standing-calf-raise',
+      keywords: 'gemelos barra de pie pantorrillas'
+    },
+    {
+      id: 'ex_barbell_seated_calf_raise',
+      nameEs: 'Elevaciones de gemelos sentado con barra',
+      nameEn: 'Seated Barbell Calf Raise',
+      category: 'Calves',
+      equipment: 'barbell',
+      muscleSlug: 'calves',
+      mwSlug: 'seated-barbell-calf-raise',
+      keywords: 'gemelos soleo sentado barra rodillas'
+    },
+    {
+      id: 'ex_bodyweight_calf_raise',
+      nameEs: 'Elevaciones de gemelos con peso corporal',
+      nameEn: 'Bodyweight Calf Raise',
+      category: 'Calves',
+      equipment: 'bodyweight',
+      muscleSlug: 'calves',
+      mwSlug: 'bodyweight-calf-raise',
+      keywords: 'gemelos escalon peso corporal'
+    },
+    {
+      id: 'ex_standing_cable_crunch',
+      nameEs: 'Crunch abdominal de pie en polea',
+      nameEn: 'Standing Cable Crunch',
+      category: 'Core',
+      equipment: 'cables',
+      muscleSlug: 'abdominals',
+      mwSlug: 'standing-cable-crunch',
+      keywords: 'crunch de pie polea abdomen'
+    },
+    {
+      id: 'ex_barbell_rollout',
+      nameEs: 'Rollout abdominal con barra',
+      nameEn: 'Barbell Ab Rollout',
+      category: 'Core',
+      equipment: 'barbell',
+      muscleSlug: 'abdominals',
+      mwSlug: 'barbell-ab-rollout',
+      keywords: 'rollout barra discos rueda abdominal core'
+    },
+    {
+      id: 'ex_landmine_180',
+      nameEs: 'Rotaciones en Landmine (Landmine 180s)',
+      nameEn: 'Landmine 180s (Russian Twist Standing)',
+      category: 'Core',
+      equipment: 'barbell',
+      muscleSlug: 'obliques',
+      mwSlug: 'landmine-180s',
+      keywords: 'landmine rotaciones oblicuos barra esquina core'
+    },
+    {
+      id: 'ex_windshield_wipers',
+      nameEs: 'Limpiaparabrisas colgado (Windshield Wipers)',
+      nameEn: 'Hanging Windshield Wipers',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'obliques',
+      mwSlug: 'hanging-windshield-wipers',
+      keywords: 'limpiaparabrisas colgado barra oblicuos calistenia'
+    },
+    {
+      id: 'ex_l_sit',
+      nameEs: 'L-Sit en paralelas / suelo',
+      nameEn: 'L-Sit Hold',
+      category: 'Core',
+      equipment: 'bodyweight',
+      muscleSlug: 'abdominals',
+      mwSlug: 'l-sit',
+      keywords: 'l sit escuadra paralelas calistenia abdomen'
+    },
+    {
+      id: 'ex_cable_wrist_curl',
+      nameEs: 'Curl de muñeca en polea baja',
+      nameEn: 'Cable Wrist Curl',
+      category: 'Forearms',
+      equipment: 'cables',
+      muscleSlug: 'forearms',
+      mwSlug: 'cable-wrist-curl',
+      keywords: 'antebrazos muneca polea baja flexores'
+    },
+    {
+      id: 'ex_plate_pinch_hold',
+      nameEs: 'Pinza de discos (Plate Pinch Hold)',
+      nameEn: 'Plate Pinch Hold',
       category: 'Forearms',
       equipment: 'barbell',
       muscleSlug: 'forearms',
-      mwSlug: 'reverse-barbell-wrist-curl',
-      keywords: 'extensores muneca antebrazo inverso barra'
-    },
-    // Additional MuscleWiki exercises across muscle groups
-    {
-      id: 'ex_high_cable_fly',
-      nameEs: 'Cruce de poleas altas (pecho inferior)',
-      nameEn: 'High-to-Low Cable Fly',
-      category: 'Chest',
-      equipment: 'cables',
-      muscleSlug: 'chest',
-      mwSlug: 'high-cable-chest-fly',
-      keywords: 'cruce polea alta pecho inferior aperturas'
-    },
-    {
-      id: 'ex_decline_db_press',
-      nameEs: 'Press declinado con mancuernas',
-      nameEn: 'Decline Dumbbell Bench Press',
-      category: 'Chest',
-      equipment: 'dumbbells',
-      muscleSlug: 'chest',
-      mwSlug: 'decline-dumbbell-bench-press',
-      keywords: 'pecho inferior declinado mancuernas'
-    },
-    {
-      id: 'ex_smith_bench_press',
-      nameEs: 'Press de banca en multipower (Smith)',
-      nameEn: 'Smith Machine Bench Press',
-      category: 'Chest',
-      equipment: 'machine',
-      muscleSlug: 'chest',
-      mwSlug: 'smith-machine-bench-press',
-      keywords: 'pecho multipower smith maquina press'
-    },
-    {
-      id: 'ex_svend_press',
-      nameEs: 'Press Svend con disco',
-      nameEn: 'Plate Svend Press',
-      category: 'Chest',
-      equipment: 'barbell',
-      muscleSlug: 'chest',
-      mwSlug: 'svend-press',
-      keywords: 'svend disco pecho interno isometrico'
-    },
-    {
-      id: 'ex_wide_grip_pulldown',
-      nameEs: 'Jalón al pecho agarre ancho',
-      nameEn: 'Wide-Grip Lat Pulldown',
-      category: 'Back',
-      equipment: 'cables',
-      muscleSlug: 'lats',
-      mwSlug: 'wide-grip-lat-pulldown',
-      keywords: 'jalon abierto ancho dorsal polea espalda'
-    },
-    {
-      id: 'ex_inverted_row',
-      nameEs: 'Remo invertido en barra / TRX',
-      nameEn: 'Inverted Row',
-      category: 'Back',
-      equipment: 'bodyweight',
-      muscleSlug: 'lats',
-      mwSlug: 'inverted-row',
-      keywords: 'remo invertido australiano barra peso corporal espalda'
-    },
-    {
-      id: 'ex_db_pullover',
-      nameEs: 'Pullover con mancuerna',
-      nameEn: 'Dumbbell Pullover',
-      category: 'Back',
-      equipment: 'dumbbells',
-      muscleSlug: 'lats',
-      mwSlug: 'dumbbell-pullover',
-      keywords: 'pullover mancuerna dorsal pecho caja toracica'
-    },
-    {
-      id: 'ex_rack_pull',
-      nameEs: 'Rack Pull con barra (Peso muerto parcial)',
-      nameEn: 'Barbell Rack Pull',
-      category: 'Back',
-      equipment: 'barbell',
-      muscleSlug: 'traps',
-      mwSlug: 'barbell-rack-pull',
-      keywords: 'rack pull jaula espalda trapecio lumbar'
-    },
-    {
-      id: 'ex_cable_upright_row',
-      nameEs: 'Remo al mentón en polea',
-      nameEn: 'Cable Upright Row',
-      category: 'Shoulders',
-      equipment: 'cables',
-      muscleSlug: 'shoulders',
-      mwSlug: 'cable-upright-row',
-      keywords: 'remo al menton polea hombros deltoides lateral'
-    },
-    {
-      id: 'ex_kb_overhead_press',
-      nameEs: 'Press militar con pesa rusa (Kettlebell)',
-      nameEn: 'Kettlebell Overhead Press',
-      category: 'Shoulders',
-      equipment: 'kettlebells',
-      muscleSlug: 'shoulders',
-      mwSlug: 'kettlebell-overhead-press',
-      keywords: 'press hombro pesa rusa kettlebell'
-    },
-    {
-      id: 'ex_alt_db_curl',
-      nameEs: 'Curl alterno con mancuernas',
-      nameEn: 'Alternating Dumbbell Curl',
-      category: 'Biceps',
-      equipment: 'dumbbells',
-      muscleSlug: 'biceps',
-      mwSlug: 'alternating-dumbbell-curl',
-      keywords: 'curl alterno mancuernas biceps brazo'
-    },
-    {
-      id: 'ex_cross_body_hammer',
-      nameEs: 'Curl martillo cruzado al pecho',
-      nameEn: 'Cross-Body Hammer Curl',
-      category: 'Biceps',
-      equipment: 'dumbbells',
-      muscleSlug: 'biceps',
-      mwSlug: 'cross-body-hammer-curl',
-      keywords: 'curl martillo cruzado braquial biceps'
-    },
-    {
-      id: 'ex_cable_single_curl',
-      nameEs: 'Curl de bíceps en polea a una mano',
-      nameEn: 'Single-Arm Cable Bicep Curl',
-      category: 'Biceps',
-      equipment: 'cables',
-      muscleSlug: 'biceps',
-      mwSlug: 'single-arm-cable-curl',
-      keywords: 'curl biceps polea unilateral una mano'
-    },
-    {
-      id: 'ex_tricep_vbar_pushdown',
-      nameEs: 'Extensión de tríceps en polea con barra en V',
-      nameEn: 'Cable V-Bar Tricep Pushdown',
-      category: 'Triceps',
-      equipment: 'cables',
-      muscleSlug: 'triceps',
-      mwSlug: 'cable-v-bar-pushdown',
-      keywords: 'triceps polea barra v extension'
-    },
-    {
-      id: 'ex_single_overhead_db_tricep',
-      nameEs: 'Extensión de tríceps tras nuca a una mano',
-      nameEn: 'Single-Arm Overhead Dumbbell Extension',
-      category: 'Triceps',
-      equipment: 'dumbbells',
-      muscleSlug: 'triceps',
-      mwSlug: 'single-arm-dumbbell-overhead-extension',
-      keywords: 'triceps unilateral mancuerna copa tras nuca una mano'
-    },
-    {
-      id: 'ex_single_leg_press',
-      nameEs: 'Prensa de piernas a una pierna',
-      nameEn: 'Single-Leg Press',
-      category: 'Legs',
-      equipment: 'machine',
-      muscleSlug: 'quads',
-      mwSlug: 'single-leg-press',
-      keywords: 'prensa unilateral una pierna cuadriceps gluteo'
-    },
-    {
-      id: 'ex_sissy_squat',
-      nameEs: 'Sentadilla Sissy',
-      nameEn: 'Sissy Squat',
-      category: 'Legs',
-      equipment: 'bodyweight',
-      muscleSlug: 'quads',
-      mwSlug: 'sissy-squat',
-      keywords: 'sentadilla sissy cuadriceps aislamiento'
-    },
-    {
-      id: 'ex_nordic_curl',
-      nameEs: 'Curl nórdico de isquiotibiales',
-      nameEn: 'Nordic Hamstring Curl',
-      category: 'Legs',
-      equipment: 'bodyweight',
-      muscleSlug: 'hamstrings',
-      mwSlug: 'nordic-hamstring-curl',
-      keywords: 'curl nordico isquios femoral peso corporal'
-    },
-    {
-      id: 'ex_good_mornings',
-      nameEs: 'Buenos días con barra (Good Morning)',
-      nameEn: 'Barbell Good Morning',
-      category: 'Legs',
-      equipment: 'barbell',
-      muscleSlug: 'hamstrings',
-      mwSlug: 'barbell-good-morning',
-      keywords: 'buenos dias good morning barra isquios femoral lumbar'
-    },
-    {
-      id: 'ex_sumo_deadlift',
-      nameEs: 'Peso muerto sumo con barra',
-      nameEn: 'Barbell Sumo Deadlift',
-      category: 'Glutes',
-      equipment: 'barbell',
-      muscleSlug: 'glutes',
-      mwSlug: 'barbell-sumo-deadlift',
-      keywords: 'peso muerto sumo barra gluteos aductores piernas'
+      mwSlug: 'plate-pinch-hold',
+      keywords: 'pinza discos agarre dedos antebrazo'
     }
   ];
 

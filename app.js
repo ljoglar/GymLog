@@ -445,7 +445,6 @@
     if (nextBtn) nextBtn.setAttribute('aria-label', t('nextDayLabel'));
     if (settingsBtn) settingsBtn.setAttribute('aria-label', t('settingsLabel'));
 
-    // Sync select option labels while keeping selected values
     const quickCatKeys = ['Custom', 'Chest', 'Back', 'Shoulders', 'Biceps', 'Triceps', 'Legs', 'Glutes', 'Calves', 'Core', 'Forearms'];
     syncSelectOptions(document.getElementById('quick-create-category'), quickCatKeys, getCategoryLabel);
 
@@ -455,7 +454,6 @@
     const eqKeys = Object.keys(EQUIPMENT_META);
     syncSelectOptions(document.getElementById('new-ex-equipment'), eqKeys, getEquipmentLabel);
 
-    // Language toggle buttons in header & settings
     document.querySelectorAll('.lang-opt').forEach((opt) => {
       opt.classList.toggle('active', opt.dataset.lang === lang);
     });
